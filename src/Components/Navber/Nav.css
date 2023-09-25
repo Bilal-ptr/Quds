@@ -1,0 +1,69 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* To separate logo and menu items */
+    align-items: center;
+    padding: 0;
+    height: 60px;
+    background-color: #151515;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+  }
+  
+  /* Logo */
+  /* .navbar-logo { */
+    /* No need to change the order for the logo */
+  /* } */
+  
+  .navbar-logo img {
+    width: 50px;
+  }
+  
+  /* Menu Items */
+  .navbar-menu {
+    /* No need to change the order for the menu items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Align menu items to the right */
+  }
+  
+  .navbar-menu li {
+    margin-left: 20px; /* Adjust the spacing between menu items */
+  }
+  
+  .navbar-menu a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  
+  /* Rest of your existing styles for links, dropdowns, etc. */
+  
+  /* Mobile Toggle */
+  .mobile-nav-toggle {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 991px) {
+    .navbar-menu {
+      display: none; /* Hide the menu items */
+    }
+  
+    /* Show mobile toggle button */
+    .mobile-nav-toggle {
+      display: block;
+    }
+  }
+  
