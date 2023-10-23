@@ -27,8 +27,8 @@ function Home() {
     </div>
     <div class="icon-box">
       <i class="bi bi-card-icon"></i>
-      <h3><a href="#">In-silico Servics
-</a></h3>
+      <h3><a href="#">In-silico Servics</a></h3>
+    
     </div>
   </div>
   </div>
