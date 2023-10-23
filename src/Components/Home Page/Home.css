@@ -1,114 +1,80 @@
-/* yourStyles.css */
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+}
 
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../../img/hero-bg.jpg") top center;
-  background-size: cover;
+  background: url("../../img/hero-bg1.jpg") top center;
+  background-size: contain;
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eae8e8;
+  text-align: center;
+  /* opacity: 0.1; */
+  overflow: hidden;
 }
 
-  #hero:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px 80px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.icon-box {
+  flex: 0 0 calc(33.333% - 20px);
+  padding: 30px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  color: #fff;
+}
+
+.icon-box i {
+  font-size: 32px;
+  color: #ffc451;
+}
+
+.icon-box h3 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 10px 0 0 0;
+}
+
+.icon-box h3 a {
+  color: #fff;
+}
+
+.icon-box h3 a:hover {
+  color: #ffc451;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto;
   }
-  
-  #hero .container {
-    position: relative;
-    padding-top: 74px;
-    text-align: center;
-  }
-  
+
   #hero h1 {
-    margin: 0;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 64px;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    line-height: 36px;
   }
-  
-  #hero h1 span {
-    color: #ffc451;
-  }
-  
+
   #hero h2 {
-    color: rgba(255, 255, 255, 0.9);
-    margin: 10px 0 0 0;
-    font-size: 24px;
-  }
-  
-  
-  #hero .icon-box {
-    padding: 30px 20px;
-    transition: ease-in-out 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    height: 100%;
-    /* display: inline-block; */
-   
-    text-align: center;
-  }
-  
-  #hero .icon-box i {
-    font-size: 32px;
-    line-height: 1;
-    color: #ffc451;
-  }
-  
-  #hero .icon-box h3 {
-    font-weight: 700;
-    margin: 10px 0 0 0;
-    padding: 0;
-    line-height: 1;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 24px;
   }
-  
-  #hero .icon-box h3 a {
-    color: #fff;
-    transition: ease-in-out 0.3s;
+
+  .icon-container {
+    flex-direction: column;
+    margin: 20px;
   }
-  
-  #hero .icon-box h3 a:hover {
-    color: #ffc451;
+
+  .icon-box {
+    flex: 1;
+    margin: 10px 0;
   }
-  
-  #hero .icon-box:hover {
-    border-color: #ffc451;
-  }
-  
-  @media (min-width: 1024px) {
-    #hero {
-      background-attachment: fixed;
-    }
-    .icon{
-      display: flex;
-      justify-content: space-between;
-      margin: 20px 80px;
-     
-    }
-  }
-  
-  @media (max-width: 768px) {
-    #hero {
-      height: auto;
-    }
-  
-    #hero h1 {
-      font-size: 28px;
-      line-height: 36px;
-    }
-  
-    #hero h2 {
-      font-size: 20px;
-      line-height: 24px;
-    }
-  }
-  
-  
+}

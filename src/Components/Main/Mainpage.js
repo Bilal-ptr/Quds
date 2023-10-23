@@ -5,10 +5,12 @@ import clint1 from '../../img/clients/client-1.png'
 import clint2 from '../../img/clients/client-2.png'
 import clint3 from '../../img/clients/client-3.png'
 
+
 function Mainpage() {
   return (
     <>
-    {/* <!-- ======= About Section ======= --> */}
+    
+    
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
