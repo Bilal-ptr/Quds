@@ -67,44 +67,31 @@ import { BrowserRouter as Router, Switch } from "react-router-dom";
 export default class NavbarComp extends Component {
   render() {
     return (
-      <Router>
-        <div>
-          <Navbar bg="dark" variant={"dark"} expand="lg">
-            <Navbar.Brand href="#">Navbar Demo Arjun Codes</Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav
-                className="mr-auto my-2 my-lg-0"
-                style={{ maxHeight: "100px" }}
-                navbarScroll
-              >
-                <Nav.Link as={Link} to="/home">
-                  Home
-                </Nav.Link>
-                <Nav.Link as={Link} to="/about">
-                  About
-                </Nav.Link>
-                <Nav.Link as={Link} to="/contact">
-                  Contact
-                </Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-        </div>
-        <div>
-          <Switch>
-            <Routes path="/about">
-              <About />
-            </Routes>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-    );
+      <div> 
+        <header id="header" className=" ">
+    <div className="">
+
+<nav className="navbar">
+      <div className="navbar-logo">
+        <img src={icon} alt="Logo" />
+      </div>
+      <ul className="navbar-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">We Offer</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+    </nav>
+
+    </div>
+  </header>
+  {/* svgXtraDoc = d.contentDocument.documentElement;  */}
+       </div>
+    )
   }
 }
