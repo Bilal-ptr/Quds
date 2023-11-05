@@ -27,8 +27,18 @@
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: flex-end; /* Align menu items to the right */
+    /* justify-content: flex-end; Align menu items to the right */
   }
+   .list {
+    /* No need to change the order for the menu items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; 
+    /* Align menu items to the right */
+  } 
+  
   
   .navbar-menu li {
     margin-left: 20px; /* Adjust the spacing between menu items */
