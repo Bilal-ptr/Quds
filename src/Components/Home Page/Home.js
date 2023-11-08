@@ -1,6 +1,7 @@
 import React from 'react'
 import  './Home.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Link } from 'react-router-dom';
 // import AOS from 'aos';
 
 function Home() {
@@ -18,17 +19,17 @@ function Home() {
   <div class="icon-container">
     <div class="icon-box">
       <i class="bi bi-card-icon"></i>
-      <h3><a href="#">Journals</a></h3>
+      <h3><Link to="#">Journals</Link></h3>
     </div>
     <div class="icon-box">
       <i class="bi bi-card-icon"></i>
-      <h3><a href="#">Publishing House
-</a></h3>
+      <h3><Link to="#">Publishing House
+</Link></h3>
     </div>
     <div class="icon-box">
       <i class="bi bi-card-icon"></i>
-      <h3><a href="#">In-silico Servics
-</a></h3>
+      <h3><Link to="#">In-silico Servics
+</Link></h3>
     </div>
   </div>
   </div>
@@ -46,32 +47,32 @@ function Home() {
     //     <div className="col-xl-2 col-md-4">
     //       <div className="icon-box">
     //         <i className="bi bi-facebook"></i>
-    //         <h3><a href="https://web.facebook.com/profile.php?id=100091503754228">facebook</a></h3>
+    //         <h3><Link to="https://web.facebook.com/profile.php?id=100091503754228">facebook</Link></h3>
     //       </div>
     //     </div>
     //     <div className="col-xl-2 col-md-4">
     //       <div className="icon-box">
     //         <i className="bi bi-instagram"></i>
-    //         <h3><a href="https://instagram.com/qudspublisher?igshid=MzNlNGNkZWQ4Mg==">instagram</a></h3>
+    //         <h3><Link to="https://instagram.com/qudspublisher?igshid=MzNlNGNkZWQ4Mg==">instagram</Link></h3>
     //       </div>
     //     </div>
     //     <div className="col-xl-2 col-md-4">
     //       <div className="icon-box">
     //         <i className="bi bi-linkedin"></i>
-    //         <h3><a href="https://www.linkedin.com/in/quds-publisher-8885b8277/">linkedin</a></h3>
+    //         <h3><Link to="https://www.linkedin.com/in/quds-publisher-8885b8277/">linkedin</Link></h3>
     //       </div>
     //     </div>
     //     <div className="col-xl-2 col-md-4">
     //       <div className="icon-box">
     //         <i className="bi bi-twitter"></i>
-    //         <h3><a href="https://twitter.com/QudsPublisher">twitter</a></h3>
-    //         {/* <!-- <i className="bi bi-facebook"></i></a> --> */}
+    //         <h3><Link to="https://twitter.com/QudsPublisher">twitter</Link></h3>
+    //         {/* <!-- <i className="bi bi-facebook"></i></Link> --> */}
     //       </div>
     //     </div>
     //     <div className="col-xl-2 col-md-4">
     //       <div className="icon-box">
     //         <i className="bi bi-envelope-open"></i>
-    //         <h3><a href="https://www.qudspublisher@gmail.com">mail</a></h3>
+    //         <h3><Link to="https://www.qudspublisher@gmail.com">mail</Link></h3>
     //       </div>
     //     </div>
       

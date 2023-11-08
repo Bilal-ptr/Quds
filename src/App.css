@@ -1,72 +1,95 @@
-
-.App {
-  text-align: center;
+:root{
+    /* variable color */
+.bg-color {color: #091827 !important; }
+.heading-color {color: #ffffff !important;} 
+.text-color {color: #a9b1b8 !important;}
+.hl-color {color: #cb0000 !important;}
+.nav-color {color: #010056 !important;}
+.link-color {color: #2424b7 !important;}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+/* Default styles for desktop */
+.navbar {
+    background-color: #3498db;
+    padding: 10px 0;
+    border-bottom: 2px solid #2980b9;
+    display: flex;
+    justify-content: space-between;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-}
-/* Nab css */
-
-
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
-  margin: 0px;
-  padding: 0px;
-}
-
-a {
-  color: #ffc451;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffd584;
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
-}
-
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  /* Style the logo */
+  .navbar-brand img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 991px) {
+    /* Adjust styles for tablets and smaller screens */
+    .navbar-brand {
+      font-size: 20px;
+    }
+  
+    .nav-item {
+      margin-right: 10px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    /* Adjust styles for mobile devices */
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-brand {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-item {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .form-control {
+      width: 100%;
+    }
+  }
+  

@@ -1,62 +1,65 @@
-
+import React from 'react';
+import { BrowserRouter, Link,  Route, Routes } from 'react-router-dom';
 import './App.css';
+import Nav from './Components/Nav';
+import Footer from './Components/Footer';
+
+
 import Home from './Components/Home Page/Home';
-import Mainpage from './Components/Main/Mainpage';
-import Nav from './Components/Navber/Nav';
+import Service from './Components/Service/Service';
+import Team from "./Components/Team/Team";
+import Project from "./Components/Project/Project";
+import Events from "./Components/Team/Events";
+import Collaboratives from './Components/Team/Collaboratives';
+import About from ".//Components/About/About";
+import Contact from "./Components/Contact/Contact";
 
 
 
-function App() {
+function App() {  
   return (
-    <div className="App">
-      <Nav />
-      <Home />
-      <Mainpage />
-      
+    <><div id="hero">
+        
+    <div className="container">
+  <div className="icon-container">
+    <div className="icon-box">
+      <i className="bi bi-card-icon"></i>
+      <h3><Link to="#">Journals</Link></h3>
     </div>
+    <div className="icon-box">
+      <i className="bi bi-card-icon"></i>
+      <h3><Link to="#">Publishing House
+</Link></h3>
+    </div>
+    <div className="icon-box">
+      <i className="bi bi-card-icon"></i>
+      <h3><Link to="#">In-silico Servics
+</Link></h3>
+    </div>
+  </div>
+  </div>
+
+  </div>
+    </>,
+    <BrowserRouter>
+
+      <Nav />
+    
+        <Routes>
+          <Route exact  path="/home"  element={<Home/>} />
+          <Route exact  path="/service"  element={<Service />} />
+          <Route exact  path="/team" element={<Team />} />
+          <Route exact  path="/collaborative"  element={<Collaboratives />} />
+          <Route exact  path="/ُevents"  element={<Events />} />
+          <Route exact  path="/project"  element={<Project />} />
+          <Route exact  path="/about" element={<About />} />
+          <Route exact  path="/contact"  element={<Contact />} />
+        </Routes>
+
+      <Footer />  
+
+    </BrowserRouter>
   );
 }
 
 export default App;
-
-// import "./App.css";
-// import React from "react";
-// import { Link, Route, Routes } from "react-router-dom";
-
-// import Home from "../src/Pages/Home";
-// import Courses from "../src/Pages/Courses";
-// import Live from "../src/Pages/Live";
-// import Contact from "../src/Pages/Contact";
-
-// function App() {
-//   return (
-//     <div className="container">
-//       <nav>
-//         <ul>
-//           <Link to="/" class="list">
-//             Home
-//           </Link>
-//           <Link to="/course" class="list">
-//             Courses
-//           </Link>
-//           <Link to="/live" class="list">
-//             Live course
-//           </Link>
-//           <Link to="/contact" class="list">
-//             Contact
-//           </Link>
-//         </ul>
-//       </nav>
-
-//       {/* Defining routes path and rendering components as element */}
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/course" element={<Courses />} />
-//         <Route path="/live" element={<Live />} />
-//         <Route path="/contact" element={<Contact />} />
-//       </Routes>
-//     </div>
-//   );
-// }
-
-// export default App;
