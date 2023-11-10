@@ -1,5 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root{
-    /* variable color */
+  /* variable color */
 .bg-color {color: #091827 !important; }
 .heading-color {color: #ffffff !important;} 
 .text-color {color: #a9b1b8 !important;}
@@ -9,87 +16,123 @@
 }
 
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          font-family: 'Roboto', sans-serif;
 }
 
 
 
-/* Default styles for desktop */
-.navbar {
-    background-color: #3498db;
-    padding: 10px 0;
-    border-bottom: 2px solid #2980b9;
-    display: flex;
-    justify-content: space-between;
-  }
+
+/* Default Page cards Display */
+
+section {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 140px 0; 
   
-  .navbar-brand {
-    font-size: 24px;
-    color: #fff;
-    font-weight: 700;
-  }
-  
-  .navbar-nav {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin-right: 15px;
-  }
-  
-  .nav-link {
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
-  /* Style the logo */
-  .navbar-brand img {
-    max-width: 100px;
-    height: auto;
-  }
-  
-  /* Media queries for responsiveness */
-  @media (max-width: 991px) {
-    /* Adjust styles for tablets and smaller screens */
-    .navbar-brand {
-      font-size: 20px;
-    }
-  
-    .nav-item {
-      margin-right: 10px;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    /* Adjust styles for mobile devices */
-    .navbar {
-      flex-direction: column;
-    }
-  
-    .navbar-brand {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-  
-    .navbar-nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .nav-item {
-      margin-right: 0;
-      margin-bottom: 5px;
-    }
-  
-    .form-control {
-      width: 100%;
-    }
-  }
-  
+}
+
+.card {
+  position: relative;
+  min-width: 300px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  transition: .5s;
+}
+.card:hover {
+  transform:scale(1.1);
+}
+.card_red, .card_red .title .fa {
+  background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+.card_violet, .card_violet .title .fa  {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+.card_three, .card_three .title .fa  {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, .1);
+  z-index: 1;
+  transform: skewY(-5deg) scale(1.5);
+}
+
+.title .fa {
+  color: #fff;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+.title h2 {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 0;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+.price {
+  position: relative;
+  z-index: 2;
+}
+.price h4 {
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 60px;
+}
+.option {
+  position: relative;
+  z-index: 2;
+}
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+.option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+}
+.card a {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  color: #2ff;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 20px auto 0;
+  line-height: 40px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0,0,0, .1);
+}
+.card a:hover {
+  background-color: #2a6496;;
+}
+

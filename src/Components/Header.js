@@ -1,103 +1,107 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import "../App.css";
-// import "./Nav";
-
+import "./Nav";
 import logo from "../img/testimonials/favicon.png";
 
 const Header = () => {
   return (
-    <nav className="flex navbar navbar-expand-lg bg-body-tertiary text-uppercase">
-      <div className="container-fluid flex navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-4 text-center">
+          <div className="col-12 col-md-4 text-center">
             <Link to="/" className="navbar-brand">
-              <img src={{ logo }} alt="Logo" />
+              <img src={logo} alt="Logo" />
             </Link>
-          
           </div>
-          <div
-            className="col-8 collapse navbar-collapse bg-color text-sm-end text-md-end text-lg-end text-xl-end"
-            id="navbarNav"
-          >
-            <ul className="navbar-nav ">
-              <li className="nav-item ">
-                <Link to="/home" className="nav-link">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item ">
-                <Link to="/service" className="nav-link">
-                  Service
-                </Link>
-              </li>
-              <li
-                className="nav-item dropdown dropdown-toggle dark"
-                data-bs-theme="dark"
-                id="dropdownMenuButtonDark"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <Link to="/team" className="nav-link ">
-                  Team
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButtonDark"
+          <div className="col-12 col-md-8 ">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link to="/home" className="nav-link">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/service" className="nav-link">
+                    Service
+                  </Link>
+                </li>
+                <li className="nav-item dropdown">
+                  <Link
+                    to="/team"
+                    className="nav-link dropdown-toggle dark"
+                    data-bs-toggle="dropdown"
                   >
+                    Team
+                  </Link>
+                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <Link class="dropdown-item active" to="#">
+                      <Link className="dropdown-item active" to="/team">
                         Team
                       </Link>
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      <hr className="dropdown-divider" />
                     </li>
-
                     <li>
-                      <Link class="dropdown-item" to="#">
-                       Collaboratives
+                      <Link className="dropdown-item" to="#">
+                        Collaboratives
                       </Link>
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link class="dropdown-item" to="#">
-                      Events
+                      <Link className="dropdown-item" to="#">
+                        Events
                       </Link>
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link class="dropdown-item" to="#">
+                      <Link className="dropdown-item" to="#">
                         Project Gallery
                       </Link>
                     </li>
                   </ul>
-                </Link>
-              </li>
-              <li className="nav-item ">
-                <Link to="/project" className="nav-link">
-                  Project
-                </Link>
-              </li>
-              <li className="nav-item ">
-                <Link to="/about" className="nav-link">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item ">
-                <Link to="/contact" className="nav-link">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+                </li>
+                <li className="nav-item">
+                  <Link to="/project" className="nav-link">
+                    Project
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/about" className="nav-link">
+                    About
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/contact" className="nav-link">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </nav>
+
+
+
   );
 };
 

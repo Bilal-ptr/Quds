@@ -5,6 +5,11 @@
   box-sizing: border-box;
 
 }
+/* #image1{
+  height: 100%;
+  width: 100%;
+  background: url("../../img/hero-bg2.jpg");
+} */
 
 #hero {
   width: 100%;
