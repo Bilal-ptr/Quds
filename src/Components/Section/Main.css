@@ -4,6 +4,7 @@
 
 
 /* Title Css Start */
+
 .img-bg{
   width: 100%;
   height: 150px;
@@ -11,7 +12,7 @@
   background-color: rgba(185, 7, 30, 0.5);
   color: #fff;
   font-family: 'Montserrat', sans-serif;
-font-variant: inherit;
+  font-variant: inherit;
   font-size: normal;
   border: 1px solid yellow;
   border-radius: 6px;
@@ -23,7 +24,7 @@ font-variant: inherit;
   box-shadow: 0 4px 8px 0 rgba(155, 155, 155, 0.735), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
   text-align: center;
   font-size: large;
- 
+  
 }
 /* End Title Css */
 
@@ -31,20 +32,81 @@ font-variant: inherit;
 
 /* Custom CSS for responsiveness */
 
+.upper{
+  background-color: rgba(185, 7, 30, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(155, 155, 155, 0.735), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  width: 100%;
+  height: fit-content;
+
+}
+.card a {
+  
+  background-color:rgba(185, 7, 30, 0.5);
+  color:#fff
+}
+.card a:hover {
+  background-color: #fff;
+  color: #bb1021;
+}
+.card {
+  /* Add some spacing between cards */
+  margin-right: 15px;
+  margin-top: 80px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(185, 7, 30, 0.5);
+  border-radius: 15px solid white;
+  
+}
+/* Animated styles */
+.card {
+  -webkit-animation: fadeIn 1s ease-in-out;
+          animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Optional: Center align the card content */
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(155, 155, 155, 0.735), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  text-align: center;
+  font-size: large;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.red-dark-line {
+  border: 2px solid #8b0000; /* Dark red color */
+  margin: 20px 0; /* Adjust the margin as needed */
+}
 @media (max-width: 767px) {
-    .card-deck {
+  .card-deck {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column;
-      }
-    
+            flex-direction: column;
+          }
+          
       .card {
         margin-bottom: 15px;
       }
   }
+
   
-  /* Animated styles */
+  
   @-webkit-keyframes fadeIn {
     from {
       opacity: 0;
@@ -60,39 +122,6 @@ font-variant: inherit;
     to {
       opacity: 1;
     }
-  }
-  
-  .card {
-    -webkit-animation: fadeIn 1s ease-in-out;
-            animation: fadeIn 1s ease-in-out;
-  }
-  
-  .card {
-    /* Add some spacing between cards */
-    margin-right: 15px;
-    margin-top: 80px;
-    margin-bottom: 15px;
-
-  }
-  
-  
-  /* Optional: Center align the card content */
-  .card-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  
-  .card-title {
-    margin-bottom: 10px;
   }
   
 

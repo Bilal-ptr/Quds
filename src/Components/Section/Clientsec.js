@@ -12,12 +12,11 @@ const Clientsec = ( )=>
 
 <>
 
-
     <div className="container">
       <Carousel>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-60"
             src="https://picsum.photos/200/300?image=100"
             alt="First slide"
           />
@@ -30,7 +29,7 @@ const Clientsec = ( )=>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-60"
             src="https://picsum.photos/200/300?image=200"
             alt="Second slide"
           />
@@ -43,7 +42,7 @@ const Clientsec = ( )=>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-60"
             src="https://picsum.photos/200/300?image=300"
             alt="Third slide"
           />
@@ -63,21 +62,21 @@ const Clientsec = ( )=>
         <Carousel>
           <Carousel.Item>
             <img
-              className="d-block w-100 img-fluid"
+              className="d-block w-50 img-fluid"
               src="img/clients/client-1.png"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100 img-fluid"
+              className="d-block w-50 img-fluid"
               src="img/clients/client-2.png"
               alt="Second slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100 img-fluid"
+              className="d-block w-50 img-fluid"
               src="img/clients/client-3.png"
               alt="Third slide"
             />
