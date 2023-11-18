@@ -3,19 +3,30 @@ import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import Home from "../Home Page/Home";
 import "./Main.css";
+import '../About/About.css'
 import '../../index.css'
 import Clientsec from "./Clientsec";
 import {Row, Col} from 'react-bootstrap';
+import "react-multi-carousel/lib/styles.css";
+import { imageData, responsive } from "../Service/data";
+import CarouselLogo from "../Service/CarouselLogo";
+import Carousel from "react-multi-carousel";
 
 
 const Default = () => {
+  const logo = imageData.map((item) => (
+    <CarouselLogo
+      name={item.name}
+      url={item.imageurl}
+    />
+  ));
   return (
     <>
     <div className="inner-banner img-bg">
         <div className="overlay ">
-            <div class="container py-5">
+            <div class="container py-3">
                 <Row className="text-center">
-                    <Col className="py-5">
+                    <Col className="py-4">
                         <h1 className="fs-1 fw-bold" style={{color:'dark'}}>Quds Publisher's</h1>
                     </Col>
                 </Row>
@@ -23,14 +34,6 @@ const Default = () => {
         </div>
     </div>
     
-  
-      {/* <div className="container-fluid p-5 m-auto">
-        <div className="row img-bg mt-5">
-          <div className="col-lg-12 col-md-12 col-sm-12 text-center">
-            <h2 className="large">Quds Publisher's</h2>
-          </div>
-        </div> */}
-
           <div className="row py-3 mt-5">
             {/* Card 1 */}
             <div className="col-md-4">
@@ -82,7 +85,88 @@ const Default = () => {
           </div>
       
       <hr className="red-dark-line"/>
-      ,
+      <br/>
+      <br/>
+      <br/>
+         {/* <!-- ======= Hero Section ======= --> */}
+  <section id="hero" className="d-flex align-items-center justify-content-center">
+    <div className="container" data-aos="fade-up">
+
+      <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div className="col-xl-6 col-lg-8">
+          <h1 style={{color:'yellowgreen'}}>Quds Publisher<span>'s</span></h1>
+          <h2><div>We excel at guiding researchers towards successful publication in prestigious journals. With our expertise in various indexing systems (Elsvair, Frontiers, Scopus, WOS) and recognition from esteemed bodies (HJRS, UGC, JCR), we ensure your work receives the visibility and recognition it deserves.</div></h2>
+        </div>
+      </div>
+
+      <div className="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-facebook"></i>
+            <h3>
+              <a href="https://web.facebook.com/profile.php?id=100091503754228">facebook</a></h3>
+            
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-whatsapp"></i>
+            <h3>
+              <a href="http://wa.me/+923189050346">whatsapp</a></h3>
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-instagram"></i>
+            <h3>
+              <a href="https://instagram.com/qudspublisher?igshid=MzNlNGNkZWQ4Mg==">instagram</a></h3>
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-linkedin"></i>
+            <h3>
+              <a href="https://www.linkedin.com/in/quds-publisher-8885b8277/">linkedin</a></h3>
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-twitter"></i>
+            <h3>
+              <a href="https://twitter.com/QudsPublisher">twitter</a></h3>
+            
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-envelope-open"></i>
+            <h3>
+              <a href="qudspublisher@gmail.com">Gmail</a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+   {/* End Hero  */}
+
+{/* Clients carousel Logos */}
+   <div className="">
+        <h1>Our Trusted Client<span>'s</span></h1>
+        <br/>
+        <Carousel showDots={true} responsive={responsive}>
+          {logo}
+        </Carousel>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+
+
+
+
       <Clientsec />
       <Routes>
         <Route path="/home" element={<Home />} />

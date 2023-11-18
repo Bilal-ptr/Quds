@@ -9,10 +9,10 @@ function Contact() {
     <div className="contact-section">
     <div className="inner-banner img-bg">
         <div className="overlay">
-            <div class="container py-5">
+            <div class="container py-3">
                 <Row className="text-center">
-                    <Col className="py-5">
-                        <h1 className="fs-1 fw-bold" style={{color:'red'}}>Contact Us</h1>
+                    <Col className="py-4">
+                        <h1 className="fs-1 fw-bold" style={{color:'dark'}}>Contact Us</h1>
                     </Col>
                 </Row>
             </div>

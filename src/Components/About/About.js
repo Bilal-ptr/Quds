@@ -9,36 +9,99 @@ function About() {
     {/* Page Title */}
     <div className="inner-banner img-bg">
         <div className="overlay">
-            <div class="container py-5">
+            <div className="container py-3">
                 <Row className="text-center">
-                    <Col className="py-5">
-                        <h1 className="fs-1 fw-bold" style={{color:'red'}}>About Us</h1>
+                    <Col className="py-4">
+                        <h1 className="fs-1 fw-bold" style={{color:'dark'}}>About Us</h1>
                     </Col>
                 </Row>
             </div>
         </div>
     </div>
     {/* <----------------------------------------> */}
+
+    {/* <!-- ======= Hero Section ======= --> */}
+  <section id="hero" className="d-flex align-items-center justify-content-center">
+    <div className="container" data-aos="fade-up">
+
+      <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div className="col-xl-6 col-lg-8">
+          <h1 style={{color:'yellowgreen'}}>Quds Publisher<span>'s</span></h1>
+          <h2><div>We excel at guiding researchers towards successful publication in prestigious journals. With our expertise in various indexing systems (Elsvair, Frontiers, Scopus, WOS) and recognition from esteemed bodies (HJRS, UGC, JCR), we ensure your work receives the visibility and recognition it deserves.</div></h2>
+        </div>
+      </div>
+
+      <div className="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-facebook"></i>
+            <h3>
+              <a href="https://web.facebook.com/profile.php?id=100091503754228">facebook</a></h3>
+            
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-whatsapp"></i>
+            <h3>
+              <a href="http://wa.me/+923189050346">whatsapp</a></h3>
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-instagram"></i>
+            <h3>
+              <a href="https://instagram.com/qudspublisher?igshid=MzNlNGNkZWQ4Mg==">instagram</a></h3>
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-linkedin"></i>
+            <h3>
+              <a href="https://www.linkedin.com/in/quds-publisher-8885b8277/">linkedin</a></h3>
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-twitter"></i>
+            <h3>
+              <a href="https://twitter.com/QudsPublisher">twitter</a></h3>
+            
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="bi bi-envelope-open"></i>
+            <h3>
+              <a href="qudspublisher@gmail.com">Gmail</a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+   {/* End Hero  */}
+    
   
      <div className="aboutus text-white">
       {/* About Section  */}
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
+      <section id="about" className="about">
+        <div className="container" data-aos="fade-up">
+          <div className="row">
             <div
-              class="col-lg-6 order-1 order-lg-2"
+              className="col-lg-6 order-1 order-lg-2"
               data-aos="fade-left"
               data-aos-delay="100"
             >
-              <img src="../../img/about.jpg" class="img-fluid" alt="" />
+              <img src="../../img/about.jpg" className="img-fluid" alt="" />
             </div>
             <div
-              class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+              className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
               data-aos-delay="100"
             >
               <h3>Maximize your chances of getting published.</h3>
-              <p class="fst-italic">
+              <p className="fst-italic">
                 Are you tired of receiving constant rejections from journals and
                 paying high APC (article processing charges)? Are you struggling
                 to get your research noticed and published in high-impact

@@ -7,7 +7,6 @@ import CarouselLogo from "../Service/CarouselLogo";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { imageData, responsive } from "../Service/data";
-
 import { Card, Col, Container, Row } from 'react-bootstrap';
 
 
@@ -22,10 +21,10 @@ function Home() {
       <>
     <div className="inner-banner img-bg">
         <div className="overlay">
-            <div class="container py-5">
+            <div class="container py-3">
                 <Row className="text-center">
-                    <Col className="py-5">
-                        <h1 className="fs-1 fw-bold" style={{color:'red'}}>Home</h1>
+                    <Col className="py-4">
+                        <h1 className="fs-1 fw-bold" style={{color:'dark'}}>Home</h1>
                     </Col>
                 </Row>
             </div>
@@ -65,22 +64,22 @@ function Home() {
         <br/>
         <br/>
       <div id="hero">
-        <div class="container">
-          <div class="icon-container">
-            <div class="icon-box">
-              <i class="bi bi-card-icon"></i>
+        <div className="container">
+          <div className="icon-container">
+            <div className="icon-box">
+              <i className="bi bi-card-icon"></i>
               <h3>
                 <Link to="#">Journals</Link>
               </h3>
             </div>
-            <div class="icon-box">
-              <i class="bi bi-card-icon"></i>
+            <div className="icon-box">
+              <i className="bi bi-card-icon"></i>
               <h3>
                 <Link to="#">Publishing House</Link>
               </h3>
             </div>
-            <div class="icon-box">
-              <i class="bi bi-card-icon"></i>
+            <div className="icon-box">
+              <i className="bi bi-card-icon"></i>
               <h3>
                 <Link to="#">In-silico Servics</Link>
               </h3>
