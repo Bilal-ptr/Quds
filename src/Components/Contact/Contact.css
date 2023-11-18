@@ -1,0 +1,25 @@
+/* contact inner section styles */
+.inner-banner {
+    background-image: url("../../img/hero-bg2.jpg");
+    height: 50vh;
+    background-repeat: repeat;
+    background-position: cover;
+    position: relative;
+    z-index: 10;
+    opacity: 0.6;
+}
+.text-design h1 {
+    z-index: 99;
+}
+.overlay {
+    position: absolute;
+    display: block;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+    z-index: 5;
+  }

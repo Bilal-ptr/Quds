@@ -4,6 +4,9 @@ import  'react-bootstrap-icons';
 import './Team.css';
 import TeamMemberCard from './TeamMemcard';
 import { Carousel } from 'react-bootstrap';
+import '../../index.css'
+import {Row, Col} from 'react-bootstrap';
+
 
 const Team = () => {
   const teamMembers = [
@@ -59,13 +62,17 @@ const Team = () => {
     // Add more team members as needed
   ];
   return (
-    <>
- <div className='container'>
-      <div className='row'>
-        <div className='col'>
-          <h2 className='text-center xlg'>Our Team Members</h2>
+      <>
+    <div className="inner-banner img-bg">
+        <div className="overlay">
+            <div class="container py-5">
+                <Row className="text-center">
+                    <Col className="py-5">
+                        <h1 className="fs-1 fw-bold" style={{color:'red'}}>Our Team Members</h1>
+                    </Col>
+                </Row>
+            </div>
         </div>
-      </div>
     </div>
   <div className="team-carousel"> 
   <Carousel>

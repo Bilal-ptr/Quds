@@ -7,11 +7,11 @@ import  'react-bootstrap-icons';
 const Footer = () => {
   return (
    <>
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-md-12">
-          <footer className="footer">
-            <div className="container">
+    <div className="container-fluid" >
+      <div className="row" style={{padding:'50px 0 20px 0'}}>
+        <div className="col-md-12" >
+          <footer className="footer" >
+            <div className="container-fluid" style={{borderTop:'2px solid red',}}>
               <div className="row">
                 <div className="col-md-3 m-b-30">
                   <div className="footer-title m-t-5 m-b-20 p-b-8">
