@@ -96,13 +96,14 @@ function Contact() {
             <div className='col'>
                 <label>Article Type<sup>*</sup></label>
                     <select  className="form-select" >
-                    <option>..Select Article Type </option>
-                    <option>..Select Article Type </option>
-                    <option>..Select Article Type </option>
+                    <option>Research Article</option>
+                    <option>Review Article</option>
+                    <option>Case Report</option>
+                    <option>Thesis (for Improvements)</option>
                 </select>
             </div>  
         </div>     
-        <div className='row'>    
+        {/* <div className='row'>    
             <div className='col'>
                 <label>Issue Type<sup>*</sup></label>
                     <select  className="form-select">
@@ -115,14 +116,14 @@ function Contact() {
                       <label >Special Issue Title<sup>*</sup></label>
                       <input type="text" class="form-control"  placeholder='Enter your title'/>
             </div>
-        </div>
+        </div> */}
         <div className='row'>
             <div className='col'>
             <label>Classifications <sup>(optional)</sup></label>
                     <select  className="form-select">
-                    <option>..Select Classification--</option>
-                    <option>..Select Issue Type </option>
-                    <option>..Select Issue Type </option>
+                    <option>Biological Sciences</option>
+                    <option>Social Sciences</option>
+                    <option>Material Sciences</option>
                     </select>
             </div>
             <div className='col'>
@@ -131,26 +132,33 @@ function Contact() {
             </div>
         </div>
         <div className='row'>
+        
             <div className='col'>
-                <label >Same thing*</label>
-                      <textarea className="form-control" />
-            </div>
-            <div className='col'>
-                <label >Key Word*</label>
+                <label >Key Word </label>
                       <textarea className="form-control" placeholder='Enter related keywords'/>
             </div>
+            <div className='col'>
+
+                </div>
+
         </div>
         <div className='row'>
             <div className='col-4'>
-                <input type="file" className="form-control"/>
+                <label for='Manuscript'>Manuscript</label>
+                <input type="file" className="form-control" value='' />
             </div>
                 <div className='col'>
-                <button class="btn btn-danger" >Add More +</button>
+               
                 </div>
-            {/* <div className='col'>
-            </div> */}
+            <div className='col-4'>
+                <label for='Additional'>Additional <sup>(Files)</sup></label>
+            <input type="file" className="form-control" value='' />
+            </div>
+            <div className='col'>
+
+            </div>
             </div>   
-        <div className='row'>
+        {/* <div className='row'>
             <div className='col-5'>
               <p><b>Note: </b> If you want to uplud more file please chlick on Add More button</p>
             </div>
@@ -158,9 +166,12 @@ function Contact() {
             </div>
             <div className='col'>
             </div>
-        </div>
+        </div> */}
         <div className='row'>
-            <div className='col'>
+            <div className='col-10'>
+                {/* <button onClick={{}} className='btn btn-warning'>Submit Manuscript</button> */}
+            </div>
+            <div className='col-2'>
                 <button onClick={{}} className='btn btn-warning'>Submit Manuscript</button>
             </div>
         </div>

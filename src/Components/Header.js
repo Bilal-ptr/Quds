@@ -1,5 +1,5 @@
 import React from "react";
-import Collapse from "react-bootstrap/Collapse";
+// import Collapse from "react-bootstrap/Collapse";
 import "../App.css";
 import "./Nav";
 import logo from "../img/testimonials/favicon.png";
@@ -7,21 +7,26 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleToggleDropdown = () => {
+    setShowDropdown((prevState) => !prevState);
+  };
   // const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   // const toggleNav = () => {
   //   setIsNavExpanded((prev) => !prev);
   // };
 
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  // const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-  const toggleNav = () => {
-    setIsNavExpanded(!isNavExpanded);
-  };
+  // const toggleNav = () => {
+  //   setIsNavExpanded(!isNavExpanded);
+  // };
   return (
     <>
  {/* Navigation bar start */}
-    {/* <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-4 text-center">
@@ -52,7 +57,7 @@ const Header = () => {
                   <Link to="/service" className="nav-link">
                     Service
                   </Link>
-                </li>
+            </li>
                 <li className="nav-item dropdown">
                   <Link
                     to="/team"
@@ -113,11 +118,11 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </nav> */}
+    </nav>
     <br/>
 
  
-    <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
+    {/* <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
     <div className="container">
       <div className="row">
         <div className="col-12 col-md-4 text-center">
@@ -139,7 +144,7 @@ const Header = () => {
             <span className="navbar-toggler-icon" ></span>
           </button>
           <div
-            className={`Collapse navbar-collapse nav ${
+            className={`collapse navbar-collapse nav ${
               isNavExpanded ? 'show' : ''
             }`}
             id="navbarNav"
@@ -224,7 +229,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  </nav>
+  </nav> */}
   </>
   );
 };
