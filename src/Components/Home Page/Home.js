@@ -87,13 +87,13 @@ function Home() {
           </div>
         </div>
       </div>
-      ,
+      
       <br />
       <br />
       <br />
       <div className="">
         <h1>React multi carousel</h1>
-        <Carousel showDots={true} responsive={responsive}>
+        <Carousel  showDots={true} responsive={responsive} transition="slide 3s">
           {logo}
         </Carousel>
       </div>

@@ -1,8 +1,9 @@
 import React from "react";
+import Collapse from "react-bootstrap/Collapse";
 import "../App.css";
 import "./Nav";
 import logo from "../img/testimonials/favicon.png";
-// import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -12,15 +13,15 @@ const Header = () => {
   //   setIsNavExpanded((prev) => !prev);
   // };
 
-  // const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-  // const toggleNav = () => {
-  //   setIsNavExpanded(!isNavExpanded);
-  // };
+  const toggleNav = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
   return (
     <>
  {/* Navigation bar start */}
-    <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
+    {/* <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-4 text-center">
@@ -112,11 +113,11 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </nav>,
+    </nav> */}
     <br/>
 
  
-    {/* <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
     <div className="container">
       <div className="row">
         <div className="col-12 col-md-4 text-center">
@@ -138,7 +139,7 @@ const Header = () => {
             <span className="navbar-toggler-icon" ></span>
           </button>
           <div
-            className={`collapse navbar-collapse nav ${
+            className={`Collapse navbar-collapse nav ${
               isNavExpanded ? 'show' : ''
             }`}
             id="navbarNav"
@@ -223,7 +224,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  </nav> */}
+  </nav>
   </>
   );
 };

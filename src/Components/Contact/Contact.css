@@ -1,25 +1,96 @@
-/* contact inner section styles */
-.inner-banner {
-    background-image: url("../../img/hero-bg2.jpg");
-    height: 50vh;
-    background-repeat: repeat;
-    background-position: cover;
-    position: relative;
-    z-index: 10;
-    opacity: 0.6;
+  /* Container Form Design */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
 }
-.text-design h1 {
-    z-index: 99;
-}
-.overlay {
-    position: absolute;
-    display: block;
-    top: 0px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
+.contaner{
+    overflow: hidden;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.39);
-    z-index: 5;
-  }
+    background-color: rgb(247, 247, 247) ;
+    color: black;
+    
+}
+.row{
+    padding: 8px 2px;
+    text-align: left;
+}
+.f-row{
+    font-size: 15px;
+    font-weight: bolder;
+  
+    padding: 8px 0;
+    box-shadow: 2px 2px 4px rgba(140, 139, 139, 0.2);
+}
+.details h2{
+    display: inline-flex;
+    color: rgb(0, 128, 202);
+    font-size: 15px;
+
+    font-weight: bolder;
+   
+    /* padding: 8px 0; */
+}
+
+.img{
+    color: rgb(0, 128, 202);
+    padding-bottom: 3px;
+    padding-right: 6px;
+}
+i{
+    color: #0080ca;
+    padding-top: 5px;
+    padding-right: 6px;
+}
+label{
+    text-align: left;
+    font-size: 14px;
+    padding: 8px 2px;
+    padding-bottom: 10px;
+}
+.form-control{
+  width: 100%;
+  background-color: rgb(253, 252, 252);
+  color: #29292a;
+  box-shadow: 3px 3px 5px rgba(149, 145, 145, 0.2);
+}
+sup{
+    font-weight: bolder;
+    color: rgb(236, 68, 68);
+    padding: 4px;
+    
+}
+.form-select{
+   background-color: rgb(255, 255, 255);
+   color: #282929;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
+}
+p{
+    font-size: 1.4vmax;
+ 
+}
+@media (max-width:600px) {
+    
+    label{
+        text-align: left;
+        font-size: 11px;
+    }
+    .form-select{
+        width: fit-content;
+    }
+  
+}
+@media (max-width:525px) {
+    label{
+        text-align: left;
+        font-size: 9px;
+    }
+}
+
+@media (max-width:300px) {
+    .form-control{
+        width: fit-content;
+    }
+}
+

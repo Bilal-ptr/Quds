@@ -2,7 +2,7 @@
 
 :root{
   /* variable color */
-.bg-color {color: #091827 !important; }
+.bg-color {color: #091827  }
 .heading-color {color: #ffffff !important;} 
 .text-color {color: #a9b1b8 !important;}
 .hl-color {color: #cb0000 !important;}
@@ -24,7 +24,7 @@
 /* Page title styles */
 .inner-banner {
 /* background-color: #010056 !; */
-background: #fa1717;
+
   /* background-image: url("./hero-bg2.jpg") center; */
   height: 50vh !important;
   background-repeat: repeat;
