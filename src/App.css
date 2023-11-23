@@ -23,7 +23,12 @@
           font-family: 'Roboto', sans-serif;
 }
 
-
+.pages {
+  color: #316685;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 10%;
+}
 
 
 /* Default Page cards Display */

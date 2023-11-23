@@ -3,7 +3,7 @@ import '../../index.css'
 import {Row, Col} from 'react-bootstrap';
 
 
-const Collaboratives = () => {
+export const Collaboratives = () => {
   return (
     <>
     <div className="inner-banner img-bg">
@@ -22,4 +22,3 @@ const Collaboratives = () => {
   )
 }
 
-export default Collaboratives

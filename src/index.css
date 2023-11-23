@@ -25,7 +25,7 @@
 .inner-banner {
 /* background-color: #010056 !; */
 
-  /* background-image: url("./hero-bg2.jpg") center; */
+  background-image: url("./hero-bg2.jpg") center;
   height: 50vh !important;
   background-repeat: repeat;
   background-position: cover;

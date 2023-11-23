@@ -8,7 +8,7 @@ import '../../index.css'
 import {Row, Col} from 'react-bootstrap';
 
 
-const Team = () => {
+export const Team = () => {
   const teamMembers = [
     {
       name: 'Osama Ali',
@@ -101,8 +101,5 @@ const Team = () => {
   
 
   </>
-  );
-};
-
-export default Team;
-
+  )
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import '../../index.css'
 import {Row, Col} from 'react-bootstrap';
 
-function Project() {
+export const Project = () => {
   return (
     <>
     <div className="inner-banner img-bg">
@@ -23,4 +23,3 @@ function Project() {
   )
 }
 
-export default Project

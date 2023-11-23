@@ -1,7 +1,7 @@
 import React from "react";
 // import '../Home Page/Home.css'
 import { Link, Route, Routes } from "react-router-dom";
-import Home from "../Home Page/Home";
+import {Home} from "../Home Page/Home";
 import "./Main.css";
 import '../About/About.css'
 import '../../index.css'
@@ -13,7 +13,7 @@ import CarouselLogo from "../Service/CarouselLogo";
 import Carousel from "react-multi-carousel";
 
 
-const Default = () => {
+export const Mainpage = () => {
   const logo = imageData.map((item) => (
     <CarouselLogo
       name={item.name}
@@ -172,7 +172,5 @@ const Default = () => {
         <Route path="/home" element={<Home />} />
       </Routes>
     </>
-  );
-};
-
-export default Default;
+  )
+}

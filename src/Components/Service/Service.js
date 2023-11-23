@@ -9,7 +9,7 @@ import { imageData,  responsive } from "./data";
 import { Button, Row, Col } from 'react-bootstrap';
 // import { Servcard } from '../Section/Servcard';
 
-const Service = () => {
+export const Service = () => {
   const [services, setService] = useState([]);
   // using useEffect for data load
   useEffect(() => {
@@ -238,7 +238,6 @@ const Service = () => {
   );
 };
 
-export default Service;
 
 
 

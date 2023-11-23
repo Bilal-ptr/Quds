@@ -1,40 +1,144 @@
 import React from "react";
-// import Collapse from "react-bootstrap/Collapse";
 import "../App.css";
 import "./Nav";
 import logo from "../img/testimonials/favicon.png";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  const handleToggleDropdown = () => {
-    setShowDropdown((prevState) => !prevState);
-  };
   // const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   // const toggleNav = () => {
   //   setIsNavExpanded((prev) => !prev);
   // };
 
-  // const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [click, setClick] = useState(false);
 
-  // const toggleNav = () => {
-  //   setIsNavExpanded(!isNavExpanded);
-  // };
+  const handleClick = () => setClick(!click);
+
   return (
     <>
- {/* Navigation bar start */}
-    <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 col-md-4 text-center">
-            <Link to="/" className="navbar-brand">
-              <img src={logo} alt="Logo" />
-            </Link>
+      {/* Navigation */}
+      <nav className="navbar navbar-expand-lg text-uppercase fixed-top">
+        <div className="nav-container">
+          <NavLink exact to="/" className="nav-logo">
+            <span className="icon">
+              <i className="fas fa-code ml-3"></i>
+            </span>
+            <img src={logo} alt="Logo" className="img" width={42} height={40} />
+          </NavLink>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/service"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Service
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/project"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Project
+              </NavLink>
+            </li>
+
+            <li className="nav-item dropdown">
+              <NavLink
+                to="/team"
+                className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                onClick={handleClick}
+              >
+                Team
+              </NavLink>
+              {click && (
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <NavLink className="dropdown-item active" to="/team">
+                      Team
+                    </NavLink>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="/Collaboratives">
+                      Collaboratives
+                    </NavLink>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="/events">
+                      Events
+                    </NavLink>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                </ul>
+              )}
+            </li>
+
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/about"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contact"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+
+          {/* Humburg Open & Closing */}
+
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
-          <div className="col-12 col-md-8 ">
+        </div>
+      </nav>
+
+      {/* <div className="col-12 col-md-4 text-center">
+            <NavLink to="/" className="navbar-brand">
+            </NavLink>
+          </div> */}
+      {/* <div className="col-12 col-md-8 ">
             <button
               className="navbar-toggler"
               type="button"
@@ -49,188 +153,72 @@ const Header = () => {
             <div className="collapse navbar-collapse nav" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link to="/home" className="nav-link">
+                  <NavLink to="/home" className="nav-link">
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link to="/service" className="nav-link">
+                  <NavLink to="/service" className="nav-link">
                     Service
-                  </Link>
-            </li>
+                  </NavLink>
+                </li>
                 <li className="nav-item dropdown">
-                  <Link
+                  <NavLink
                     to="/team"
                     className="nav-link dropdown-toggle dark"
                     data-bs-toggle="dropdown"
                   >
                     Team
-                  </Link>
+                  </NavLink>
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <Link className="dropdown-item active" to="/team">
+                      <NavLink className="dropdown-item active" to="/team">
                         Team
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="#">
+                      <NavLink className="dropdown-item" to="#">
                         Collaboratives
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="#">
+                      <NavLink className="dropdown-item" to="#">
                         Events
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="#">
+                      <NavLink className="dropdown-item" to="#">
                         Project Gallery
-                      </Link>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Link to="/project" className="nav-link">
+                  <NavLink to="/project" className="nav-link">
                     Project
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" className="nav-link">
+                  <NavLink to="/about" className="nav-link">
                     About
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link to="/contact" className="nav-link">
+                  <NavLink to="/contact" className="nav-link">
                     Contact
-                  </Link>
+                  </NavLink>
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <br/>
-
- 
-    {/* <nav className="navbar navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
-    <div className="container">
-      <div className="row">
-        <div className="col-12 col-md-4 text-center">
-          <Link to="/" className="navbar-brand">
-            <img src={logo} alt="Logo" />
-          </Link>
-        </div>
-        <div className="col-12 col-md-8 " >
-          <button 
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded={isNavExpanded}
-            aria-label="Toggle navigation"
-            onClick={toggleNav}
-          >
-            <span className="navbar-toggler-icon" ></span>
-          </button>
-          <div
-            className={`collapse navbar-collapse nav ${
-              isNavExpanded ? 'show' : ''
-            }`}
-            id="navbarNav"
-          >
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link to="/home" className="nav-link">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/service" className="nav-link">
-                  Service
-                </Link>
-              </li>
-              <li className="nav-item dropdown">
-                <Link
-                  to="/team"
-                  className="nav-link dropdown-toggle dark"
-                  data-bs-toggle="dropdown"
-                  data-bs-target="#teamDropdown"
-                  aria-controls="teamDropdown"
-                  aria-expanded={isNavExpanded}
-                >
-                  Team
-                </Link>
-                <ul
-                  className={`dropdown-menu ${
-                    isNavExpanded ? 'show' : ''
-                  }`}
-                  id="teamDropdown"
-                  aria-labelledby="teamDropdown"
-                >
-                  <li>
-                    <Link className="dropdown-item" to="/team">
-                      Team
-                    </Link>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#">
-                      Collaboratives
-                    </Link>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#">
-                      Events
-                    </Link>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#">
-                      Project Gallery
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="nav-item">
-                <Link to="/project" className="nav-link">
-                  Project
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/about" className="nav-link">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/contact" className="nav-link">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav> */}
-  </>
+              </ul> */}
+    </>
   );
 };
 

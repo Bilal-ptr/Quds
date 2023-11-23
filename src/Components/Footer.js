@@ -30,14 +30,14 @@ const Footer = () => {
                     Our Services
                   </div>
                   <div className="footer-links">
-                    <Link to="#">
+                    <Link to="/contact">
 Peer Review Submission</Link>
-                    <Link to="#">Substantive Editing Service</Link>
+                    <Link to="/contact">Substantive Editing Service</Link>
                     <Link to="#">
 Content writing</Link>
                     <Link to="#">
 Journal Submission Assistance</Link>
-                    <Link to="#">
+                    <Link to="/contact">
 Manuscript Foramting</Link>
                     <Link to="#">Editorial Contact Support</Link>
                     <Link to="#">
@@ -49,13 +49,13 @@ Rejected Paper Editing</Link>
                     Quick Links
                   </div>
                   <div className="footer-links">
-                    <Link to="#">Events</Link>
-                    <Link to="#">Team</Link>
-                    <Link to="#">Blog</Link>
-                    <Link to="#">Collaboratives</Link>
-                    <Link to="#">Terms & conditions</Link>
-                    <Link to="#">Privacy policy</Link>
-                    <Link to="#">Frequently Asking Question</Link>
+                    <Link to="/team">Team</Link>
+                    <Link to="/events">Events</Link>
+                    <Link to="/blog">Blog</Link>
+                    <Link to="/collaboratives">Collaboratives</Link>
+                    <Link to="/terms">Terms & conditions</Link>
+                    <Link to="/privacy">Privacy policy</Link>
+                    <Link to="/faqs">Frequently Asking Question</Link>
                   </div>
                 </div>
                 <div className="col-md-3 m-b-30">

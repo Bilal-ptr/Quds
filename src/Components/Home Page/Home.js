@@ -10,7 +10,7 @@ import { imageData, responsive } from "../Service/data";
 import { Card, Col, Container, Row } from 'react-bootstrap';
 
 
-function Home() {
+export const Home = () =>{
   const logo = imageData.map((item) => (
     <CarouselLogo
       name={item.name}
@@ -142,4 +142,4 @@ function Home() {
   );
 }
 
-export default Home;
+

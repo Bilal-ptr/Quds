@@ -2,7 +2,7 @@ import React from 'react'
 import '../../index.css'
 import {Row, Col} from 'react-bootstrap';
 
-function Events() {
+export const Events = () => {
   return (
     <>
     <div className="inner-banner img-bg">
@@ -16,9 +16,9 @@ function Events() {
             </div>
         </div>
     </div>
+
+    
     
     </>
   )
 }
-
-export default Events

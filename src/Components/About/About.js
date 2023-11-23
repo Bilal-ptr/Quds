@@ -3,7 +3,7 @@ import '../../index.css';
 import "./About.css";
 import {Row, Col} from 'react-bootstrap';
 
-function About() {
+export const About = () => {
   return (
     <>
     {/* Page Title */}
@@ -163,4 +163,4 @@ function About() {
   );
 }
 
-export default About;
+
