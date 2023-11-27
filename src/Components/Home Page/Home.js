@@ -92,7 +92,7 @@ export const Home = () =>{
       <br />
       <br />
       <div className="">
-        <h1>React multi carousel</h1>
+        <h1>Our Trusted Clients</h1>
         <Carousel  showDots={true} responsive={responsive} transition="slide 3s">
           {logo}
         </Carousel>

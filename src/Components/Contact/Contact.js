@@ -16,38 +16,33 @@ import Select from "react-select";
 import Collapse from "react-bootstrap/Collapse";
 
 const CountrySelect = () => {
-    const [countries, setCountries] = useState([]);
-    const [selectedCountry, setSelectedCountry] = useState({});
-  
-    useEffect(() => {
-      fetch(
-        "https://valid.layercode.workers.dev/list/countries?format=select&flags=true&value=code"
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          setCountries(data.countries);
-          setSelectedCountry(data.userSelectValue);
-        });
-    }, []);
-    return (
-      <Select
-        options={countries}
-        value={selectedCountry}
-        onChange={(selectedOption) => setSelectedCountry(selectedOption)}
-      />
-    );
-  };
+  const [countries, setCountries] = useState([]);
+  const [selectedCountry, setSelectedCountry] = useState({});
 
+  useEffect(() => {
+    fetch(
+      "https://valid.layercode.workers.dev/list/countries?format=select&flags=true&value=code"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setCountries(data.countries);
+        setSelectedCountry(data.userSelectValue);
+      });
+  }, []);
+  return (
+    <Select
+      options={countries}
+      value={selectedCountry}
+      onChange={(selectedOption) => setSelectedCountry(selectedOption)}
+    />
+  );
+};
 
-
-  export const Contact = () => {
-
-
-    
+export const Contact = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="contact-section">
+      <div className="contact-section ">
         <div className="inner-banner img-bg">
           <div className="overlay">
             <div class="container py-3">
@@ -65,7 +60,7 @@ const CountrySelect = () => {
         <br />
 
         {/* Submission a Menu script here */}
-        <div className="contaner ">
+        <div className="contaner bg-body-tertiary">
           <div className="row">
             <div className="col">
               <div className="f-row">Submit Manuscript</div>
@@ -90,65 +85,60 @@ const CountrySelect = () => {
               <div className="col">
                 <label>
                   Auther First Name<sup>*</sup>
-                
+                </label>
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Enter First Name"
                 />
-                </label>
               </div>
               <div className="col">
                 <label>
                   Auther Last Name<sup>*</sup>
-                
+                </label>
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Enter Last Name"
                 />
-                </label>
               </div>
               <div className="col">
                 <label>
                   Auther Email<sup>*</sup>
-               
+                </label>
                 <input
                   type="email"
                   className="form-control"
                   placeholder="Enter your email"
                 />
-                 </label>
               </div>
             </div>
             <div className="row">
               <div className="col">
                 <label>
                   Alterrnate Email<sup>*</sup>
-               
+                </label>
                 <input
                   type="email"
                   className="form-control"
                   placeholder="Alternate email"
                 />
-                 </label>
               </div>
               <div className="col">
                 <label>
                   Phone Number<sup>*</sup>
-             
+                </label>
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Phone number"
                 />
-                   </label>
               </div>
               <div className="col">
                 <label>
                   Choose Your Region<sup>*</sup>
-                <CountrySelect />
                 </label>
+                <CountrySelect />
               </div>
             </div>
             <div className="row">
@@ -163,39 +153,36 @@ const CountrySelect = () => {
               <div className="col">
                 <label>
                   Title<sup>*</sup>
-               
+                </label>
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Enter your title"
                 />
-                 </label>
               </div>
               <div className="col">
                 <label>
                   Article Type<sup>*</sup>
-               
+                </label>
                 <select className="form-select">
                   <option>Research Article</option>
                   <option>Review Article</option>
                   <option>Case Report</option>
                   <option>Thesis (for Improvements)</option>
                 </select>
-                </label>
               </div>
             </div>
-            
+
             <div className="row">
               <div className="col">
                 <label>
                   Classifications <sup>(optional)</sup>
-               
+                </label>
                 <select className="form-select">
                   <option>Biological Sciences</option>
                   <option>Social Sciences</option>
                   <option>Material Sciences</option>
                 </select>
-                </label>
               </div>
               <div className="col">
                 <label>
@@ -204,60 +191,55 @@ const CountrySelect = () => {
                     {" "}
                     [if Classification is not found in the above list]
                   </span>
-               
+                </label>
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Enter your classification"
                 />
-                 </label>
               </div>
             </div>
             <div className="row">
               <div className="col">
-                <label>Key Word 
+                <label>Key Word </label>
                 <textarea
                   className="form-control"
                   placeholder="Enter related keywords"
                 />
-                </label>
               </div>
               <div className="col"></div>
             </div>
             <div className="row">
               <div className="col-4">
-                <label >Manuscript
-                <input type="file" className="form-control" value="" />
+                <label>
+                  Manuscript
+                  <input type="file" className="form-control" value="" />
                 </label>
               </div>
               <div className="col"></div>
               <div className="col-4">
-                <label >
+                <label>
                   Additional <sup>(Files)</sup>
-                
-                <input type="file" className="form-control" value="" />
                 </label>
+                <input type="file" className="form-control" value="" />
               </div>
               <div className="col"></div>
             </div>
-<br/>
-<div className="row">
-    <div className="col">
-        <div className="loading"></div>
-    </div>
-    <div className="col">
-        <div className="error"></div>
-    </div>
-
-</div>
+            <br />
+            <div className="row">
+              <div className="col">
+                <div className="loading"></div>
+              </div>
+              <div className="col">
+                <div className="error"></div>
+              </div>
+            </div>
 
             <div className="row">
-      <div className="col-auto justify-content-end">
-        <Button variant="warning ">
-          Submit Manuscript
-        </Button>
-      </div>
-    </div>
+              <div className="col-auto justify-content-end">
+                <Button variant="warning ">Submit Manuscript</Button>
+              </div>
+            </div>
           </from>
         </div>
         <br />
@@ -382,6 +364,4 @@ const CountrySelect = () => {
       <br />
     </>
   );
-}
-
-
+};

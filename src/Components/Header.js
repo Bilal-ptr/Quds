@@ -19,19 +19,19 @@ const Header = () => {
   return (
     <>
       {/* Navigation */}
-      <nav className="navbar navbar-expand-lg text-uppercase fixed-top">
+      <nav className="navbar navbar-expand-md navbar-expand-lg bg-body-tertiary text-uppercase fixed-top">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            <span className="icon">
+          <NavLink exact to="/main" className="nav-logo">
+            {/* <span className="icon">
               <i className="fas fa-code ml-3"></i>
-            </span>
+            </span> */}
             <img src={logo} alt="Logo" className="img" width={42} height={40} />
           </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/"
+                to="/home"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
