@@ -4,6 +4,7 @@ import "./App.css";
 import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
 
+
 import  {Mainpage}  from "./Components/Section/MainPage";
 import  {Home}  from "./Components/Home Page/Home";
 import  {Service}  from "./Components/Service/Service";
@@ -22,10 +23,9 @@ import {Blog} from './Components/About/Blog';
 
 function App() {
   return (
-    <>
+
       <BrowserRouter>
         <Nav />
-
         <div className="page">
           <Routes>
             <Route path="/main" exact element={<Mainpage />} />
@@ -43,10 +43,9 @@ function App() {
             <Route path="/terms" element={<Terms />} />
           </Routes>
         </div>
-
         <Footer />
       </BrowserRouter>
-    </>
+        
   );
 }
 

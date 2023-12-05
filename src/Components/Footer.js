@@ -8,16 +8,16 @@ const Footer = () => {
   return (
    <>
     <div className="container" >
-      <div className="row" style={{padding:'50px 0 20px 0'}}>
+      <div className="row">
         <div className="col-md-12" >
           <footer className="footer" >
-            <div className="container" style={{borderTop:'2px solid red',}}>
+            <div className="container">
               <div className="row">
                 <div className="col-md-3 m-b-30">
                   <div className="footer-title m-t-5 m-b-20 p-b-8">
                     About us
                   </div>
-                    <img src={Logo} alt="Logo" width="70%" />
+                    <img src={Logo} alt="Logo" width="50%" />
                   <p className="white-text">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -91,7 +91,7 @@ Rejected Paper Editing</Link>
               </div>
             </div>
           </footer>
-          <div className="footer-bottom  container-fluid">
+          <div className="footer-bottom container-fluid">
             Copyright © 2023, All Rights Reserved
           </div>
         </div>
