@@ -1,5 +1,6 @@
 {
   "name": "quds-publisher",
+  "homepage": "https://demo.qudspub.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +23,6 @@
     "react-router-dom": "^6.18.0",
     "react-scripts": "^3.0.1",
     "react-select-country-list": "^2.2.3",
-    "styled-components": "^6.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

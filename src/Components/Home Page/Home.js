@@ -24,7 +24,7 @@ export const Home = () =>{
             <div class="container py-3">
                 <Row className="text-center">
                     <Col className="py-4">
-                        <h1 className="fs-1 fw-bold" style={{color:'dark'}}>Home</h1>
+                        <h1 className="fs-1 mt-5 fw-bold" style={{color:'black', fontFamily:'fantasy'}}>Home</h1>
                     </Col>
                 </Row>
             </div>

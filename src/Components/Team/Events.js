@@ -10,7 +10,7 @@ export const Events = () => {
             <div class="container py-3">
                 <Row className="text-center">
                     <Col className="py-4">
-                        <h1 className="fs-1 fw-bold" style={{color:'dark'}}>Events</h1>
+                        <h1 className="fs-1 mt-5 fw-bold" style={{color:'black', fontFamily:'fantasy'}}>Events</h1>
                     </Col>
                 </Row>
             </div>

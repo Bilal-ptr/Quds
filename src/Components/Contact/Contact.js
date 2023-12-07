@@ -48,7 +48,7 @@ export const Contact = () => {
             <div class="container py-3">
               <Row className="text-center">
                 <Col className="py-4">
-                  <h1 className="fs-1 fw-bold" style={{ color: "dark" }}>
+                  <h1 className="fs-1 mt-5 fw-bold" style={{color:'black', fontFamily:'fantasy'}}>
                     Contact Us
                   </h1>
                 </Col>

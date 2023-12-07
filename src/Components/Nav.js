@@ -9,11 +9,8 @@ const Nav = () => {
   
   return (
     <header>
-      <NavLink  to="/" >
+      <NavLink>
            <Header />
-
-
-{/* <Navbar/> */}
       </NavLink>
     </header>
   

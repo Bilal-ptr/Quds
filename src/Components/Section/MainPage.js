@@ -1,7 +1,7 @@
 import React from "react";
 // import '../Home Page/Home.css'
-import { Link, Route, Routes } from "react-router-dom";
-import {Home} from "../Home Page/Home";
+import { Link} from "react-router-dom";
+// import {Home} from "../Home Page/Home";
 import "./Main.css";
 import '../About/About.css'
 import '../../index.css'
@@ -27,7 +27,7 @@ export const Mainpage = () => {
             <div class="container py-3">
                 <Row className="text-center">
                     <Col className="py-4">
-                        <h1 className="fs-1 fw-bold" style={{color:'dark'}}>Quds Publisher's</h1>
+                        <h1 className="fs-1 mt-5 fw-bold" style={{color:'black', fontFamily:'fantasy'}}>Quds Publisher's</h1>
                     </Col>
                 </Row>
             </div>
@@ -93,13 +93,13 @@ export const Mainpage = () => {
     <div className="container" data-aos="fade-up">
 
       <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div className="col-xl-6 col-lg-8">
+        <div className="col-xl-6 col-lg-12">
           <h1 style={{color:'yellowgreen'}}>Quds Publisher<span>'s</span></h1>
           <h2><div>We excel at guiding researchers towards successful publication in prestigious journals. With our expertise in various indexing systems (Elsvair, Frontiers, Scopus, WOS) and recognition from esteemed bodies (HJRS, UGC, JCR), we ensure your work receives the visibility and recognition it deserves.</div></h2>
         </div>
       </div>
 
-      <div className="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+      <div className="row gy-4 mt-2 justify-content-center " data-aos="zoom-in" data-aos-delay="250">
         <div className="col-xl-2 col-md-4">
           <div className="icon-box">
             <i className="bi bi-facebook"></i>
@@ -151,7 +151,7 @@ export const Mainpage = () => {
    {/* End Hero  */}
 
 {/* Clients carousel Logos */}
-   <div className="">
+   <div className="text-center">
         <h1>Our Trusted Client<span>'s</span></h1>
         <br/>
         <Carousel showDots={true} responsive={responsive}>
@@ -168,9 +168,9 @@ export const Mainpage = () => {
 
 
       <Clientsec />
-      <Routes>
+      {/* <Routes>
         <Route path="/home" element={<Home />} />
-      </Routes>
+      </Routes> */}
     </>
   )
 }
