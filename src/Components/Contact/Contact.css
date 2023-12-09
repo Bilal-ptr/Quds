@@ -8,14 +8,15 @@
 .contaner{
     overflow: hidden;
     width: 100%;
-    background-color: rgb(247, 247, 247) ;
+    height: 100%;
+    /* background-color: rgb(247, 247, 247) ; */
     color: black;
     
 }
-/* .row{
+.row{
     padding: 8px 2px;
-    text-align: left;
-} */
+    /* text-align: left; */
+}
 .f-row{
     font-size: 15px;
     font-weight: bolder;
@@ -24,13 +25,10 @@
     box-shadow: 2px 2px 4px rgba(140, 139, 139, 0.2);
 }
 .details h2{
-    display: inline-flex;
+    display: inline;
     color: rgb(0, 128, 202);
-    font-size: 15px;
-
+    font-size: 18px;
     font-weight: bolder;
-   
-    /* padding: 8px 0; */
 }
 
 .img{
@@ -39,15 +37,17 @@
     padding-right: 6px;
 }
 i{
+    font-size: 32px;
     color: #0080ca;
     padding-top: 5px;
     padding-right: 6px;
 }
-label{
+h2,label{
+    color: white;
     text-align: left;
-    font-size: 14px;
-    padding: 8px 2px;
-    padding-bottom: 10px;
+    font-size: 16px;
+    padding: 10px 5px;
+    /* padding-bottom: 10px; */
 }
 .form-control{
   width: 100%;
@@ -64,7 +64,8 @@ sup{
 .form-select{
    background-color: rgb(255, 255, 255);
    color: #282929;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
+max-width: fit-content;
 }
 p{
     font-size: 1.4vmax;
@@ -79,12 +80,24 @@ p{
     .form-select{
         width: fit-content;
     }
-  
+    i{
+        font-size: 22px;
+        color: #0080ca;
+        padding-top: 5px;
+        padding-right: 6px;
+    }
+    h2,label{
+        color: white;
+        text-align: left;
+        font-size: 14px;
+        padding: 10px 5px;
+        /* padding-bottom: 10px; */
+    } 
 }
 @media (max-width:525px) {
     label{
         text-align: left;
-        font-size: 9px;
+        font-size: 12px;
     }
 }
 

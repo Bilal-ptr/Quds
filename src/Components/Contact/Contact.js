@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import {
   faEnvelope,
   faGlobeAsia,
@@ -60,111 +59,117 @@ export const Contact = () => {
         <br />
 
         {/* Submission a Menu script here */}
-        <div className="contaner bg-body-tertiary">
+        <div className="contaner p-3 bg-body-tertiary">
           <div className="row">
             <div className="col">
-              <div className="f-row">Submit Manuscript</div>
+              <div className="f-row fs-2 font-roboto text-warning text-center text-bg-darklight">Submit Manuscript</div>
             </div>
           </div>
-          <from>
-            <div className="row">
-              <div className="col">
+          <from id="manuscriptForm" className="row gy-2 gx-3 justify-content-center">
+            <div className="row g-3">
+              <div className="col-auto col-md-6 col-lg-4">
                 <div className="details">
                   <img
                     className="img"
                     src={User}
                     alt="Editor"
-                    width={22}
-                    height={22}
+                    width={18}
+                    height={18}
                   />
                   <h2>Auther Details:</h2>
-                </div>
+                  </div>    
               </div>
             </div>
-            <div className="row">
-              <div className="col">
+
+            <div className="row gap-1 d-flex">
+              <div className="col-auto col-lg-6 cool-sm-12">
                 <label>
                   Auther First Name<sup>*</sup>
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control form-control-lg"
                   placeholder="Enter First Name"
                 />
               </div>
-              <div className="col">
+              <div className="col-auto">
                 <label>
                   Auther Last Name<sup>*</sup>
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control form-control-lg"
                   placeholder="Enter Last Name"
                 />
               </div>
-              <div className="col">
+              <div className="col-auto">
                 <label>
                   Auther Email<sup>*</sup>
                 </label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control form-control-lg"
                   placeholder="Enter your email"
                 />
               </div>
             </div>
-            <div className="row">
-              <div className="col">
+
+
+            {/*Seconde Row   */}
+            <div className="row gap-1 d-flex">
+              <div className="col-auto col-lg-6 cool-sm-12">
                 <label>
                   Alterrnate Email<sup>*</sup>
                 </label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control form-control-lg"
                   placeholder="Alternate email"
                 />
               </div>
-              <div className="col">
+              <div className="col-auto">
                 <label>
                   Phone Number<sup>*</sup>
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control form-control-lg"
                   placeholder="Phone number"
                 />
               </div>
-              <div className="col">
+              <div className="col-auto">
                 <label>
                   Choose Your Region<sup>*</sup>
                 </label>
                 <CountrySelect />
               </div>
             </div>
+
+            {/* Third row */}
             <div className="row">
-              <div className="col">
+              <div className="col-auto">
                 <div className="details">
                   <i class="bi bi-file-earmark-richtext-fill"></i>
                   <h2>Manuscript Details:</h2>
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div className="col">
+            <div className="row gap-1 d-flex">
+              <div className="col-auto col-lg-6 cool-sm-12">
                 <label>
                   Title<sup>*</sup>
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control form-control-lg"
                   placeholder="Enter your title"
                 />
               </div>
-              <div className="col">
+              <div className="col-auto">
                 <label>
                   Article Type<sup>*</sup>
                 </label>
-                <select className="form-select">
+                <select className="form-control form-control-lg">
                   <option>Research Article</option>
                   <option>Review Article</option>
                   <option>Case Report</option>
@@ -173,18 +178,18 @@ export const Contact = () => {
               </div>
             </div>
 
-            <div className="row">
-              <div className="col">
-                <label>
+            <div className="row gap-1 d-flex">
+              <div className="col-auto col-lg-6 cool-sm-12">
+                   <label>
                   Classifications <sup>(optional)</sup>
                 </label>
-                <select className="form-select">
+                <select className="form-control form-control-lg">
                   <option>Biological Sciences</option>
                   <option>Social Sciences</option>
                   <option>Material Sciences</option>
                 </select>
               </div>
-              <div className="col">
+              <div className="col-auto">
                 <label>
                   Suggest Classification
                   <span>
@@ -194,50 +199,50 @@ export const Contact = () => {
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control form-control-lg"
                   placeholder="Enter your classification"
                 />
               </div>
             </div>
-            <div className="row">
-              <div className="col">
+            <div className="row gap-1 d-flex">
+              <div className="col-auto col-lg-6 cool-sm-12">
                 <label>Key Word </label>
                 <textarea
-                  className="form-control"
+                  className="form-control form-control-lg"
                   placeholder="Enter related keywords"
                 />
               </div>
-              <div className="col"></div>
             </div>
             <div className="row">
-              <div className="col-4">
+              <div className="col-auto col-lg-3 ">
                 <label>
-                  Manuscript
-                  <input type="file" className="form-control" value="" />
+                  Manuscript<sup>*</sup>
                 </label>
+                  <input type="file" className="form-control form-control-lg" value="" required/>
               </div>
-              <div className="col"></div>
-              <div className="col-4">
+              <div className="col-auto col-lg-3">
                 <label>
                   Additional <sup>(Files)</sup>
                 </label>
-                <input type="file" className="form-control" value="" />
+                <input type="file" className="form-control form-control-lg" value="" />
               </div>
-              <div className="col"></div>
             </div>
             <br />
             <div className="row">
-              <div className="col">
-                <div className="loading"></div>
-              </div>
-              <div className="col">
-                <div className="error"></div>
+              <div className="col-auto">
+                <div className="alert alert-success" role="alert">
+                Thank you! Your manuscript has been submitted successfully.
+                </div>
+                {/* <div className="alert alert-danger" role="alert">
+                Error: Please fill in all required fields.
+                </div> */}
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-auto justify-content-end">
-                <Button variant="warning ">Submit Manuscript</Button>
+            <div className="row g-3 g-lg-2 g-md-2">
+              <div className="col-auto g-4">
+                <Button type="submit" variant="warning " className="rounded btn-sm ">Submit Manuscript</Button>
+                <Button type="reset" className="rounded btn-sm" variant="warning ">Clear Form</Button>
               </div>
             </div>
           </from>
@@ -270,8 +275,7 @@ export const Contact = () => {
                             />
                             Quds Publication House
                           </h6>
-                          {/* <h6 className="mx-5"></h6> */}
-                          {/* <p className="mx-5 text-secondary">Dhaka, Bangladesh</p> */}
+                          
                         </div>
                         <div className="address border-0 border-bottom my-1">
                           <h5>
