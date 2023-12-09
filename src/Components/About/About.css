@@ -11,12 +11,13 @@ body {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../../img/hero-bg.jpg") top center;
+  background: url("../../img/hero-bg.jpg") middle center ;
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
+  opacity: 1.0;
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -37,7 +38,7 @@ body {
   font-size: 56px;
   font-weight: 700;
   line-height: 64px;
-  color: #fff;
+  /* color: #fff; */
   font-family: "Poppins", sans-serif;
 }
 

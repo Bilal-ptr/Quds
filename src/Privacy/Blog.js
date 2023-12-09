@@ -1,8 +1,6 @@
 import React from "react";
-import '../../index.css';
-import "./About.css";
+import '../index.css';
 import {Row, Col} from 'react-bootstrap';
-
 export const Blog = () => {
   return (
 

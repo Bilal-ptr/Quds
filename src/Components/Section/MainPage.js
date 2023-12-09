@@ -22,6 +22,7 @@ export const Mainpage = () => {
   ));
   return (
     <>
+    {/* -------------Title Of The Page */}
     <div className="inner-banner img-bg">
         <div className="overlay ">
             <div class="container py-3">
@@ -33,10 +34,12 @@ export const Mainpage = () => {
             </div>
         </div>
     </div>
+
+
     
-          <div className="row py-3 mt-5">
+          <div className="row p-3 mt-2 bg-black rounded-3 justify-content-center">
             {/* Card 1 */}
-            <div className="col-md-4">
+            <div className="col-auto col-md-6 col-lg-4">
               <div className="card upper">
                 <div className="card-body upper">
                   <h5 className="card-title">Journals</h5>
@@ -51,7 +54,7 @@ export const Mainpage = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="col-md-4 ">
+            <div className="col-auto col-md-6 col-lg-4">
               <div className="card upper">
                 <div className="card-body upper">
                   <h5 className="card-title">Publishing House</h5>
@@ -69,7 +72,7 @@ export const Mainpage = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="col-md-4 ">
+            <div className="col-auto col-md-6 col-lg-4 ">
               <div className="card upper">
                 <div className="card-body upper">
                   <h5 className="card-title">In-silico Servics</h5>
@@ -89,18 +92,18 @@ export const Mainpage = () => {
       <br/>
       <br/>
          {/* <!-- ======= Hero Section ======= --> */}
-  <section id="hero" className="d-flex align-items-center justify-content-center">
+  <section id="hero" className="d-flexjustify-content-center">
     <div className="container" data-aos="fade-up">
 
       <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div className="col-xl-6 col-lg-12">
+        <div className="col-12 col-xl-6 col-lg-5">
           <h1 style={{color:'yellowgreen'}}>Quds Publisher<span>'s</span></h1>
           <h2><div>We excel at guiding researchers towards successful publication in prestigious journals. With our expertise in various indexing systems (Elsvair, Frontiers, Scopus, WOS) and recognition from esteemed bodies (HJRS, UGC, JCR), we ensure your work receives the visibility and recognition it deserves.</div></h2>
         </div>
       </div>
 
-      <div className="row gy-4 mt-2 justify-content-center " data-aos="zoom-in" data-aos-delay="250">
-        <div className="col-xl-2 col-md-4">
+      <div className="row wrapper gy-4 mt-2 justify-content-center " data-aos="zoom-in" data-aos-delay="250">
+        <div className="col-auto col-xl-2 col-md-4">
           <div className="icon-box">
             <i className="bi bi-facebook"></i>
             <h3>
@@ -108,28 +111,28 @@ export const Mainpage = () => {
             
           </div>
         </div>
-        <div className="col-xl-2 col-md-4">
+        <div className="col-auto col-xl-2 col-md-4">
           <div className="icon-box">
             <i className="bi bi-whatsapp"></i>
             <h3>
               <a href="http://wa.me/+923189050346">whatsapp</a></h3>
           </div>
         </div>
-        <div className="col-xl-2 col-md-4">
+        <div className="col-auto col-xl-2 col-md-4">
           <div className="icon-box">
             <i className="bi bi-instagram"></i>
             <h3>
               <a href="https://instagram.com/qudspublisher?igshid=MzNlNGNkZWQ4Mg==">instagram</a></h3>
           </div>
         </div>
-        <div className="col-xl-2 col-md-4">
+        <div className="col-auto col-xl-2 col-md-4">
           <div className="icon-box">
             <i className="bi bi-linkedin"></i>
             <h3>
               <a href="https://www.linkedin.com/in/quds-publisher-8885b8277/">linkedin</a></h3>
           </div>
         </div>
-        <div className="col-xl-2 col-md-4">
+        <div className="col-auto col-xl-2 col-md-4">
           <div className="icon-box">
             <i className="bi bi-twitter"></i>
             <h3>
@@ -137,7 +140,7 @@ export const Mainpage = () => {
             
           </div>
         </div>
-        <div className="col-xl-2 col-md-4">
+        <div className="col-auto col-xl-2 col-md-4">
           <div className="icon-box">
             <i className="bi bi-envelope-open"></i>
             <h3>
@@ -151,26 +154,18 @@ export const Mainpage = () => {
    {/* End Hero  */}
 
 {/* Clients carousel Logos */}
-   <div className="text-center">
-        <h1>Our Trusted Client<span>'s</span></h1>
+   <div className="container-fluid mt-5 mb-5 p-5 gap-2 g-2">
+        <h1 className="text-center" style={{color:'goldenrod'}}>Our Trusted Client<span>'s</span></h1>
         <br/>
         <Carousel showDots={true} responsive={responsive}>
           {logo}
         </Carousel>
       </div>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
 
+<div className="container-fluid p-2 m-1 ">
+      <Clientsec/>
+</div>
 
-
-
-
-      <Clientsec />
-      {/* <Routes>
-        <Route path="/home" element={<Home />} />
-      </Routes> */}
     </>
   )
 }

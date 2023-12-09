@@ -166,7 +166,7 @@
 
 
 .container {
-  max-width: 936px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -184,28 +184,29 @@
 
 
 /* Style the carousel for responsive media query */
-.clients .carousel-inner {
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
+    .clients .carousel-inner {
     /* Make the carousel slides fit the screen width */
     height: 300px;
   }
 }
 
+/* Make the carousel controls smaller for mobile devices */
+@media (max-width: 767px) {
 .clients .carousel-control-prev,
 .clients .carousel-control-next {
-  /* Make the carousel controls smaller for mobile devices */
-  @media (max-width: 767px) {
-    width: 30px;
-    height: 30px;
+   height: 30px;
+   width: 30px;
+  
   }
 }
 
-.clients .carousel-indicators {
-  /* Make the carousel indicators smaller for mobile devices */
-  @media (max-width: 767px) {
-    li {
+/* Make the carousel indicators smaller for mobile devices */
+@media (max-width: 767px) {
+    .clients .carousel-indicators {
+    
       width: 10px;
       height: 10px;
-    }
+    
   }
 }

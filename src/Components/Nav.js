@@ -9,7 +9,7 @@ const Nav = () => {
   
   return (
     <header>
-      <NavLink>
+      <NavLink tabIndex={1}>
            <Header />
       </NavLink>
     </header>

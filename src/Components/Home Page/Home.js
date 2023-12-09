@@ -19,6 +19,7 @@ export const Home = () =>{
   ));
   return (
       <>
+      {/* -----------Title Bar Start------------------------- */}
     <div className="inner-banner img-bg">
         <div className="overlay">
             <div class="container py-3">
@@ -30,8 +31,10 @@ export const Home = () =>{
             </div>
         </div>
     </div>
-    
+    {/* ---------------Titel Bar End --------------------------- */}
   
+
+
    {/* Welcome section */}
         <div className="welcome">
             <Container className="py-5 border-bottom border-danger">
@@ -88,57 +91,90 @@ export const Home = () =>{
         </div>
       </div>
       
-      <br />
-      <br />
-      <br />
-      <div className="">
-        <h1>Our Trusted Clients</h1>
+<hr className="divider" />
+      <div className="container-fluid p-5 g-2">
+        <h1 className="text-center" style={{color:'goldenrod'}}>Our Trusted Clients</h1>
         <Carousel  showDots={true} responsive={responsive} transition="slide 3s">
           {logo}
         </Carousel>
       </div>
+    
+<hr className="divider" />
+    {/* ------------------ Service Card layout Start --------------------- */}
+<div className="card-group justify-content-center pt-5 p-5 bg-black rounded">
+  <div className="col">
+    <div className="card rounded-5"> 
+    <div className="icon"><i className="fa fas-dribbble"></i></div>
+      <img src="../../img/download.jpg" className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div className="col">
+    <div className="card rounded-5">
+      <img src="..." className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div className="col">
+    <div className="card rounded-5">
+      <img src="..." className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text bin to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{/* ------------------------------------------------------------ */}
+
+
+{/* -------------------------- Second Group Services --------------------------------- */}
+<div className="card-group bg-black p-5 rounded-bottom">
+  <div className="col">
+    <div className="card rounded-5">
+      <img src="..." className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div className="col">
+    <div className="card rounded-5">
+      <img src="..." className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div className="col">
+    <div className="card rounded-5">
+      <img src="..." className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr className="divider" />
+
+
+
+    
+    
+    
+    
+
     </>
-
-    // <section id="hero" className="d-flex align-items-center justify-content-center">
-    // <div className="container" data-aos="fade-up">
-    //   {/* Move the icon section below the paragraph section */}
-    //   <div className="row gy-4 mt-5 icon justify-content-center" data-aos="zoom-in" data-aos-delay="280">
-    //     <div className="col-xl-2 col-md-4">
-    //       <div className="icon-box">
-    //         <i className="bi bi-facebook"></i>
-    //         <h3><Link to="https://web.facebook.com/profile.php?id=100091503754228">facebook</Link></h3>
-    //       </div>
-    //     </div>
-    //     <div className="col-xl-2 col-md-4">
-    //       <div className="icon-box">
-    //         <i className="bi bi-instagram"></i>
-    //         <h3><Link to="https://instagram.com/qudspublisher?igshid=MzNlNGNkZWQ4Mg==">instagram</Link></h3>
-    //       </div>
-    //     </div>
-    //     <div className="col-xl-2 col-md-4">
-    //       <div className="icon-box">
-    //         <i className="bi bi-linkedin"></i>
-    //         <h3><Link to="https://www.linkedin.com/in/quds-publisher-8885b8277/">linkedin</Link></h3>
-    //       </div>
-    //     </div>
-    //     <div className="col-xl-2 col-md-4">
-    //       <div className="icon-box">
-    //         <i className="bi bi-twitter"></i>
-    //         <h3><Link to="https://twitter.com/QudsPublisher">twitter</Link></h3>
-    //         {/* <!-- <i className="bi bi-facebook"></i></Link> --> */}
-    //       </div>
-    //     </div>
-    //     <div className="col-xl-2 col-md-4">
-    //       <div className="icon-box">
-    //         <i className="bi bi-envelope-open"></i>
-    //         <h3><Link to="https://www.qudspublisher@gmail.com">mail</Link></h3>
-    //       </div>
-    //     </div>
-
-    //   </div>
-
-    // </div>
-    // </section>
   );
 }
 

@@ -19,13 +19,12 @@
 }
 .f-row{
     font-size: 15px;
-    font-weight: bolder;
-  
+    font-weight: bolder;  
     padding: 8px 0;
     box-shadow: 2px 2px 4px rgba(140, 139, 139, 0.2);
 }
 .details h2{
-    display: inline;
+    display: inline-flex;
     color: rgb(0, 128, 202);
     font-size: 18px;
     font-weight: bolder;

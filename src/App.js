@@ -17,7 +17,7 @@ import  {Contact}  from "./Components/Contact/Contact";
 import {Faqs} from './Privacy/Faqs';
 import {Policy} from './Privacy/Policy';
 import {Terms} from './Privacy/Terms';
-import {Blog} from './Components/About/Blog';
+import {Blog} from './Privacy/Blog';
 
 
 
