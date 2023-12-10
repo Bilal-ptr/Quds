@@ -1,11 +1,15 @@
-import React from "react";
+import React from 'react';
 import "../App.css";
-import "./Nav";
+// import "./Nav";
+
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";
-
 import logo from "../img/testimonials/favicon.png";
-
 const Header = () => {
+
+
+    
+
   return (
     <>
       <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
@@ -63,50 +67,50 @@ const Header = () => {
                   </Link>
                 </li>
 
-                <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+{/* ---------------Dropdown Team --------------------------- */}
+<NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Team"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item to="/team">
+              <Link to="/team">
+                Team
+                </Link>
+            
+                </NavDropdown.Item>
+              <NavDropdown.Item to="/collaboratives">
+              <Link to="/collaboratives">
+              Collaboratives
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item to="/events">
+              <Link to="/events">
+                Events
+              
+                </Link>
+                </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/faqs">
+              <Link to="/faqs">
+              FAQ's
+                </Link>
+              </NavDropdown.Item>
+            </NavDropdown>
+
+
+                {/* <li className="nav-item dropdown">
+          <Link 
+           className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Team
           </Link>
-          <ul className="dropdown-menu">
+          <ul className="dropdown" aria-label='dropdownmenu' >
             <li><Link className="dropdown-item" to="#">Team</Link></li>
             <li><Link className="dropdown-item" to="#">Collaboratives</Link></li>
             <li><Link className="dropdown-item" to="#">Events</Link></li>
             <li><Link className="dropdown-item" to="#">Gallery</Link></li>
           </ul>
-        </li>
-{/* 
-                <li className="nav-item dropdown-center">
-                  <Link
-                    className="nav-link dropdown-toggle"
-                    to="/team"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Team
-                  </Link>
-                  <ul className="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <Link className="dropdown-item" to="/collaborative">
-                        Collaboratives
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/events">
-                        Events
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/gallery">
-                        Gallery
-                      </Link>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                  </ul>
-                </li> */}
-
+        </li> */}
                 
                 <li className="nav-item">
                   <Link className="nav-link" to="/about">
@@ -120,99 +124,18 @@ const Header = () => {
                   </Link>
                 </li>
               </ul>
+              <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+
             </div>
           </div>
         </div>
       </nav>
 
-      {/* <nav className="navbar">          
-            <NavLink exact to="" className="nav-logo">
-              <img src={logo} alt="Logo" />
-           </NavLink>
-          
-        <ul className={click ? "nav-menu-active" : "nav-menu"}>
-          <li className="nav-item">
-            <NavLink
-              exact
-              to="/home"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              exact
-              to="/service"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-            >
-              Service
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              exact
-              to="/team"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-            >
-              Team
-              <ul className="">
-              <li className="nav-item">
-            <NavLink
-              exact
-              to="/project"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-            >
-              Project
-            </NavLink>
-          </li>
-              </ul>
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              exact
-              to="/about"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-            >
-              About
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              exact
-              to="/contact"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-            >
-              Contact Us
-            </NavLink>
-          </li>
-        </ul>
-        <div className="nav-icon" onClick={handleClick}> */}
-      {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
-      {/* {click ? (
-              <span className="icon">
-                <HamburgetMenuOpen />{" "}
-              </span>
-            ) : (
-              <span className="icon">
-                <HamburgetMenuClose />
-              </span>
-            )}
-        </div>
-      </nav> */}
+
+
     </>
   );
 };

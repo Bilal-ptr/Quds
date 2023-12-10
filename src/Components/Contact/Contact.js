@@ -44,7 +44,7 @@ export const Contact = () => {
       <div className="contact-section ">
         <div className="inner-banner img-bg">
           <div className="overlay">
-            <div class="container py-3">
+            <div className="container py-3">
               <Row className="text-center">
                 <Col className="py-4">
                   <h1 className="fs-1 mt-5 fw-bold" style={{color:'black', fontFamily:'fantasy'}}>
@@ -59,7 +59,7 @@ export const Contact = () => {
         <br />
 
         {/* Submission a Menu script here */}
-        <div className="contaner p-3 bg-body-tertiary">
+        <div className="contaner  bg-body-tertiary">
           <div className="row">
             <div className="col">
               <div className="f-row fs-2 font-roboto text-warning text-center text-bg-darklight">Submit Manuscript</div>
@@ -81,8 +81,8 @@ export const Contact = () => {
               </div>
             </div>
 
-            <div className="row gap-1 d-flex">
-              <div className="col-auto col-lg-6 cool-sm-12">
+            <div className="row gap-0 d-flex">
+              <div className="col-auto col-xl-4 col-lg-4  col-md-6 col-sm-10">
                 <label>
                   Auther First Name<sup>*</sup>
                 </label>
@@ -92,7 +92,7 @@ export const Contact = () => {
                   placeholder="Enter First Name"
                 />
               </div>
-              <div className="col-auto">
+              <div className="col-auto col-xl-4 col-lg-4  col-md-6 col-sm-10">
                 <label>
                   Auther Last Name<sup>*</sup>
                 </label>
@@ -102,7 +102,7 @@ export const Contact = () => {
                   placeholder="Enter Last Name"
                 />
               </div>
-              <div className="col-auto">
+              <div className="col-auto col-xl-4 col-lg-4  col-md-6 col-sm-10">
                 <label>
                   Auther Email<sup>*</sup>
                 </label>
@@ -116,8 +116,8 @@ export const Contact = () => {
 
 
             {/*Seconde Row   */}
-            <div className="row gap-1 d-flex">
-              <div className="col-auto col-lg-6 cool-sm-12">
+            <div className="row gap-0 d-flex">
+              <div className="col-auto col-xl-4 col-lg-4  col-md-6 col-sm-10">
                 <label>
                   Alterrnate Email<sup>*</sup>
                 </label>
@@ -127,7 +127,7 @@ export const Contact = () => {
                   placeholder="Alternate email"
                 />
               </div>
-              <div className="col-auto">
+              <div className="col-auto col-xl-4 col-lg-4  col-md-6 col-sm-10">
                 <label>
                   Phone Number<sup>*</sup>
                 </label>
@@ -137,7 +137,7 @@ export const Contact = () => {
                   placeholder="Phone number"
                 />
               </div>
-              <div className="col-auto">
+              <div className="col-auto col-xl-4 col-lg-4  col-md-6 col-sm-10">
                 <label>
                   Choose Your Region<sup>*</sup>
                 </label>
@@ -149,23 +149,23 @@ export const Contact = () => {
             <div className="row">
               <div className="col-auto">
                 <div className="details">
-                  <i class="bi bi-file-earmark-richtext-fill"></i>
+                  <i className="bi bi-file-earmark-richtext-fill"></i>
                   <h2>Manuscript Details:</h2>
                 </div>
               </div>
             </div>
-            <div className="row gap-1 d-flex">
-              <div className="col-auto col-lg-6 cool-sm-12">
+            <div className="row gap-0 d-flex">
+              <div className="col-auto col-xl-6 col-lg-6  col-md-6 col-sm-10">
                 <label>
                   Title<sup>*</sup>
                 </label>
                 <input
                   type="text"
-                  class="form-control form-control-lg"
+                  className="form-control form-control-lg"
                   placeholder="Enter your title"
                 />
               </div>
-              <div className="col-auto">
+              <div className="col-auto col-xl-6 col-lg-6  col-md-6 col-sm-10">
                 <label>
                   Article Type<sup>*</sup>
                 </label>
@@ -178,8 +178,8 @@ export const Contact = () => {
               </div>
             </div>
 
-            <div className="row gap-1 d-flex">
-              <div className="col-auto col-lg-6 cool-sm-12">
+            <div className="row gap-0 d-flex">
+              <div className="col-auto col-xl-6 col-lg-6  col-md-6 col-sm-10">
                    <label>
                   Classifications <sup>(optional)</sup>
                 </label>
@@ -189,7 +189,7 @@ export const Contact = () => {
                   <option>Material Sciences</option>
                 </select>
               </div>
-              <div className="col-auto">
+              <div className="col-auto col-xl-6 col-lg-6  col-md-6 col-sm-10">
                 <label>
                   Suggest Classification
                   <span>
@@ -199,13 +199,13 @@ export const Contact = () => {
                 </label>
                 <input
                   type="text"
-                  class="form-control form-control-lg"
+                  className="form-control form-control-lg"
                   placeholder="Enter your classification"
                 />
               </div>
             </div>
-            <div className="row gap-1 d-flex">
-              <div className="col-auto col-lg-6 cool-sm-12">
+            <div className="row gap-0 d-flex">
+              <div className="col-auto col-xl-8 col-lg-8 col-sm-10">
                 <label>Key Word </label>
                 <textarea
                   className="form-control form-control-lg"
@@ -239,10 +239,10 @@ export const Contact = () => {
               </div>
             </div>
 
-            <div className="row g-3 g-lg-2 g-md-2">
-              <div className="col-auto g-4">
-                <Button type="submit" variant="warning " className="rounded btn-sm ">Submit Manuscript</Button>
-                <Button type="reset" className="rounded btn-sm" variant="warning ">Clear Form</Button>
+            <div className="row">
+              <div className="col-auto col-xl-8 col-lg-6 col-md-6 col-sm-10 justify-items-center">
+                <Button type="submit" variant="warning " className="rounded btn-sm mx-3 ">Submit Manuscript</Button>
+                <Button type="reset" className="rounded btn-sm mx-3" variant="warning ">Clear Form</Button>
               </div>
             </div>
           </from>

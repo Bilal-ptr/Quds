@@ -37,7 +37,8 @@ export const Mainpage = () => {
 
 
     
-          <div className="row p-3 mt-2 bg-black rounded-3 justify-content-center">
+          <div className="row my-5 mx-3 bg-black rounded-3 justify-content-center">
+            {/* <div className="p-2 bg-black rounded-3 justify-content-center "></div> */}
             {/* Card 1 */}
             <div className="col-auto col-md-6 col-lg-4">
               <div className="card upper">
@@ -86,10 +87,9 @@ export const Mainpage = () => {
               </div>
             </div>
           </div>
-      
-      <hr className="red-dark-line"/>
-      <br/>
-      <br/>
+      {/* ------------------------------------------------------------------------ */}
+ 
+
       <br/>
          {/* <!-- ======= Hero Section ======= --> */}
   <section id="hero" className="d-flexjustify-content-center">
@@ -102,7 +102,7 @@ export const Mainpage = () => {
         </div>
       </div>
 
-      <div className="row wrapper gy-4 mt-2 justify-content-center " data-aos="zoom-in" data-aos-delay="250">
+      <div className="row  gy-4 mt-2 justify-content-center " data-aos="zoom-in" data-aos-delay="250">
         <div className="col-auto col-xl-2 col-md-4">
           <div className="icon-box">
             <i className="bi bi-facebook"></i>
@@ -154,7 +154,7 @@ export const Mainpage = () => {
    {/* End Hero  */}
 
 {/* Clients carousel Logos */}
-   <div className="container-fluid mt-5 mb-5 p-5 gap-2 g-2">
+   <div className="container-fluid">
         <h1 className="text-center" style={{color:'goldenrod'}}>Our Trusted Client<span>'s</span></h1>
         <br/>
         <Carousel showDots={true} responsive={responsive}>
