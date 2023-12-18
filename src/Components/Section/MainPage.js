@@ -28,7 +28,7 @@ export const Mainpage = () => {
             <div class="container py-3">
                 <Row className="text-center">
                     <Col className="py-4">
-                        <h1 className="fs-1 mt-5 fw-bold" style={{color:'black', fontFamily:'fantasy'}}>Quds Publisher's</h1>
+                        <h1 className="fs-1 mt-5 fw-bold" style={{color:'#ffeb05', fontFamily:'fantasy'}}>Quds Publisher's</h1>
                     </Col>
                 </Row>
             </div>
@@ -92,7 +92,7 @@ export const Mainpage = () => {
 
       <br/>
          {/* <!-- ======= Hero Section ======= --> */}
-  <section id="hero" className="d-flexjustify-content-center">
+  <section id="hero" className="d-flex justify-content-center">
     <div className="container" data-aos="fade-up">
 
       <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">

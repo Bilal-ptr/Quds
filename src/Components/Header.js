@@ -1,6 +1,6 @@
 import React from 'react';
 import "../App.css";
-// import "./Nav";
+import "./Nav.css";
 
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";

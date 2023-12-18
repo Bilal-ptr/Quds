@@ -17,8 +17,9 @@ const Clientsec = () => {
           <Carousel.Item>
             <img
               className="d-block w-60"
-              src="https://picsum.photos/200/300?image=100"
-              alt="First slide"
+               src="../../img/testimonials/testimonials-2.jpg"
+              alt="quds publisher"
+            
             />
             <Carousel.Caption>
               <h3>First slide label</h3>
@@ -33,8 +34,8 @@ const Clientsec = () => {
           <Carousel.Item>
             <img
               className="d-block w-60"
-              src="https://picsum.photos/200/300?image=200"
-              alt="Second slide"
+              src="../../img/testimonials/testimonials-2.jpg"
+              alt="quds publisher"
             />
             <Carousel.Caption>
               <h3>Second slide label</h3>
@@ -48,8 +49,8 @@ const Clientsec = () => {
           <Carousel.Item>
             <img
               className="d-block w-60"
-              src="https://picsum.photos/200/300?image=300"
-              alt="Third slide"
+              src="../../img/testimonials/testimonials-2.jpg"
+              alt="quds publisher"
             />
             <Carousel.Caption>
               <h3>Third slide label</h3>

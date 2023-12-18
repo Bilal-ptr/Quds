@@ -19,10 +19,8 @@ const Footer = () => {
                   </div>
                     <img src={Logo} alt="Logo" width="50%" />
                   <p className="white-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500 text of the
-                    printing.
+                
+We steer researchers towards top publications in prestigious journals. Our indexing expertise and esteemed recognitions guarantee your work's visibility and merit.
                   </p>
                 </div>
                 <div className="col-md-3 m-b-30">
@@ -71,7 +69,7 @@ Rejected Paper Editing</Link>
                     <Link to="#">Journal Publication</Link>
                   </div>
 
-                  <div className="footer-social-links m-t-30">
+                  <div className="footer-social-links ">
                     <li>
                       <Link to="#">
                         <i className="bi bi-facebook" aria-hidden="true"></i>
@@ -91,7 +89,9 @@ Rejected Paper Editing</Link>
               </div>
             </div>
           </footer>
-          <div className="footer-bottom container-fluid">
+          <div className="container-fluid footer-bottom">
+        
+            Designed By <a href='https://osama-ali.netlify.app/' target='blank' className='design'>Osama Ali</a> <br/>
             Copyright © 2023, All Rights Reserved
           </div>
         </div>

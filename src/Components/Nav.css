@@ -32,7 +32,6 @@
   width: 80%;
 }
 
-
 .nav-item .nav-links{
   text-decoration: none;
   color: #fff;
@@ -41,6 +40,15 @@
   margin: 0 5px;
   cursor: pointer;
 }
+.nav-item,.nav-links:hover{
+  text-decoration: none;
+  color: #d5bc05;
+  font-size: 20px;
+  padding: 1px 4px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
 
 
 .nav-icon,.icon{
@@ -120,7 +128,7 @@
 /* Styling for Footer Title */
 .footer-title {
   position: relative;  /* Positioned relative to its normal position */
-  color: #000000;  /* White text color */
+  color: #ffeb05;  /* White text color */
   font-size: 24px;  /* Font size of the title */
   font-weight: 600;  /* Bold font weight */
   margin-top: 5px;  /* Small top margin */
@@ -151,7 +159,7 @@
 }
 
 .footer-links a:hover {
-  color: #ff304d;  /* Red color on hover */
+  color: #ffeb05;  /* Red color on hover */
 }
 /* Styling for the About Us Section */
 .white-text {
@@ -165,21 +173,21 @@
 }
 
 .footer-social-links a {
-  width: 40px;  /* Width of each social link */
-  height: 40px;  /* Height of each social link */
-  font-size: 16px;  /* Font size of the icon */
-  float: left;  /* Float to the left */
-  margin-right: 10px;  /* Right margin between links */
-  padding: 10px;  /* Padding around each link */
-  border: 1px solid #404040;  /* Border around each link */
-  border-radius: 50px;  /* Rounded corners for links */
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  float: left;
+  margin-right: 16px;
+  padding: 3px;
+  border: 1px solid #ffc10724;
+  border-radius: 1px solid #ffc107;
   text-align: center;  /* Center text within the link */
-  color: #fff;  /* White text color */
+  color: #ffeb05;  /* White text color */
   line-height: 1;  /* Line height of the text */
   -webkit-transition: background 0.3s ease-in-out;  /* Transition effect for background */
   -o-transition: background 0.3s ease-in-out;  /* Transition effect for background */
   transition: background 0.3s ease-in-out;  /* Transition effect for background */
-  /* background: rgba(255, 255, 255, 0.576);   */
+  /* background: rgba(255, 214, 30, 0.309);   */
 }
 
 .footer-social-links a:hover {
@@ -191,11 +199,28 @@
   width: 100%;  /* Full width of the container */
   padding: 20px 0;  /* Padding at the top and bottom */
   text-align: center;  /* Center text within the container */
-  /* color: #fff;   */
-    /* background: rgb(35, 37, 0); */
+  border-top:gray 1px solid ;
 }
 
 /* Container for Footer Content */
 .container {
-  border-top: 2px solid red;  /* Red border at the top */
+  border-top: 2px solid #ffeb05;  /* Red border at the top */
+}
+
+.design{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: large;
+  font-family: sans-serif;
+ /* font-variant: small-caps; */
+}
+
+.design:hover{
+  text-decoration: none;
+  color: #ffc107;
+  font-size: large;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  
 }
