@@ -44,11 +44,11 @@ const Header = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="offcanvas-body ">
-              <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <li className="nav-item">
+            <div className="offcanvas-body " >
+              <ul className="navbar-nav justify-content-center flex-grow-1 pe-3" >
+                <li className="nav-item" tabIndex={0}>
                   <Link
-                    className="nav-link active"
+              className="nav-link" id="RouterNavLink"
                     aria-current="page"
                     to="/home"
                   >
@@ -56,12 +56,12 @@ const Header = () => {
                   </Link>
                 </li>
                 
-                <li className="nav-item">
+                <li className="nav-item" tabIndex={1}>
                   <Link className="nav-link" to="/service">
                     Service
                   </Link>
                 </li>
-                                <li className="nav-item">
+                                <li className="nav-item" tabIndex={2}>
                   <Link className="nav-link" to="/project">
                     Project
                   </Link>
@@ -73,25 +73,25 @@ const Header = () => {
               title="Team"
               menuVariant="dark"
             >
-              <NavDropdown.Item to="/team">
+              <NavDropdown.Item to="/team" tabIndex={3}>
               <Link to="/team">
                 Team
                 </Link>
             
                 </NavDropdown.Item>
-              <NavDropdown.Item to="/collaboratives">
+              <NavDropdown.Item to="/collaboratives" tabIndex={4}>
               <Link to="/collaboratives">
               Collaboratives
                 </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item to="/events">
+              <NavDropdown.Item to="/events" tabIndex={5}>
               <Link to="/events">
                 Events
               
                 </Link>
                 </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/faqs">
+              <NavDropdown.Item href="/faqs" tabIndex={6}>
               <Link to="/faqs">
               FAQ's
                 </Link>
@@ -112,21 +112,21 @@ const Header = () => {
           </ul>
         </li> */}
                 
-                <li className="nav-item">
+                <li className="nav-item" tabIndex={7}>
                   <Link className="nav-link" to="/about">
                     About
                   </Link>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" tabIndex={8}>
                   <Link className="nav-link" to="/contact">
                     Contact
                   </Link>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-primary" type="submit">Search</button>
+              <form className="d-flex" role="search" tabIndex={9}>
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button className="btn btn-outline-primary" type="submit">Search</button>
       </form>
 
             </div>

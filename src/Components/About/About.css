@@ -17,7 +17,7 @@ body {
 }
 
 #hero:before {
-  opacity: 1.0;
+  opacity: 1;
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
