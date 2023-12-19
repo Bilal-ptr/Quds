@@ -7,134 +7,132 @@ import "react-bootstrap-icons";
 const Clientsec = () => {
   // const image = [
   //   {
-      
+
   //   }
   // ];
   return (
     <>
-      <div className="container">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-60"
-               src="../../img/testimonials/testimonials-2.jpg"
-              alt="quds publisher"
-            
-            />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>
-                Nulla vitae elit libero, at pharetra augue. Donec id elit eget
-                nibh et magna faucibus consectetuer. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus.
-              </p>
+       <Carousel interval={5000} controls indicators>
+      <Carousel.Item>
+        <div className="d-flex flex-column align-items-center justify-content-center h-100">
+          <img
+            className="rounded-circle mt-4"
+            src="../../img/testimonials/team-6.jpg"
+            alt="Person 1"
+          />
+          <div className="mt-4">
+            <h5 className="mb-0">John Doe <span className="text-warning">⭐⭐⭐⭐⭐</span></h5>
+            <Carousel.Caption className="text-muted">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-60"
-              src="../../img/testimonials/testimonials-2.jpg"
-              alt="quds publisher"
-            />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel semper lacus faucibus sed.
-                Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-60"
-              src="../../img/testimonials/testimonials-2.jpg"
-              alt="quds publisher"
-            />
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel semper lacus faucibus sed.
-                Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </div>
-
-      <section className="clients">
-        <div className="container" data-aos="zoom-in">
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block justify-content-center w-75img-fluid"
-                src="#"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block justify-content-center w-75 img-fluid"
-                src="#"
-                alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block justify-content-center w-75 img-fluid"
-                src="#"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block justify-content-center w-75 img-fluid"
-                src="#"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block justify-content-center w-75 img-fluid"
-                src="#"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block justify-content-center w-75 img-fluid"
-                src="#"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block justify-content-center w-75 img-fluid"
-                src="#"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block justify-content-center w-75 img-fluid"
-                src="#"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block justify-content-center w-75 img-fluid"
-                src="#"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            {/* Add more Carousel.Items as needed */}
-          </Carousel>
+          </div>
         </div>
-      </section>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="d-flex flex-column align-items-center justify-content-center h-100">
+          <img
+            className="rounded-circle mt-4"
+            src="../../img/testimonials/team-6.jpg"
+            alt="Person 1"
+          />
+          <div className="mt-4">
+            <h5 className="mb-0">John Doe <span className="text-warning">⭐⭐⭐⭐⭐</span></h5>
+            <Carousel.Caption className="text-muted">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            </Carousel.Caption>
+          </div>
+        </div>
+      </Carousel.Item>
+      {/*  */}
+      <Carousel.Item>
+        <div className="d-flex flex-column align-items-center justify-content-center h-100">
+          <img
+            className="rounded-circle mt-4"
+            src="../../img/testimonials/team-6.jpg"
+            alt="Person 1"
+          />
+          <div className="mt-4">
+            <h5 className="mb-0">John Doe <span className="text-warning">⭐⭐⭐⭐⭐</span></h5>
+            <Carousel.Caption className="text-muted">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            </Carousel.Caption>
+          </div>
+        </div>
+      </Carousel.Item>
 
+            {/* ----------------Card 5 -------------------------- */}
+
+      <Carousel.Item>
+        <div className="d-flex flex-column align-items-center justify-content-center h-100">
+          <img
+            className="rounded-circle mt-4"
+            src="../../img/testimonials/testimonials-4.jpg"
+            alt="Person 1"
+          />
+          <div className="mt-4">
+            <h5 className="mb-0">John Doe <span className="text-warning">⭐⭐⭐⭐⭐</span></h5>
+            <Carousel.Caption className="text-muted">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            </Carousel.Caption>
+          </div>
+        </div>
+      </Carousel.Item>
+
+            {/* ----------------Card 6 -------------------------- */}
+
+      <Carousel.Item>
+        <div className="d-flex flex-column align-items-center justify-content-center h-100">
+          <img
+            className="rounded-circle mt-4"
+            src="../../img/testimonials/testimonials-5.jpg"
+            alt="Person 1"
+          />
+          <div className="mt-4">
+            <h5 className="mb-0">John Doe <span className="text-warning">⭐⭐⭐⭐⭐</span></h5>
+            <Carousel.Caption className="text-muted">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            </Carousel.Caption>
+          </div>
+        </div>
+      </Carousel.Item>
+
+            {/* ----------------Card 7 -------------------------- */}
+      <Carousel.Item>
+        <div className="d-flex flex-column align-items-center justify-content-center h-100">
+          <img
+            className="rounded-circle mt-4"
+            src="../../img/testimonials/team-5.jpg"
+            alt="Person 1"
+          />
+          <div className="mt-4">
+            <h5 className="mb-0">John Doe <span className="text-warning">⭐⭐⭐⭐⭐</span></h5>
+            <Carousel.Caption className="text-muted">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            </Carousel.Caption>
+          </div>
+        </div>
+      </Carousel.Item>
+
+      {/* ----------------Card 8 -------------------------- */}
+      <Carousel.Item>
+        <div className="d-flex flex-column align-items-center justify-content-center h-100">
+          <img
+            className="rounded-circle mt-4"
+            src="../../img/testimonials/team-6.jpg"
+            alt="Person 1"
+          />
+          <div className="mt-4">
+            <h5 className="mb-0">John Doe <span className="text-warning">⭐⭐⭐⭐⭐</span></h5>
+            <Carousel.Caption className="text-muted">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            </Carousel.Caption>
+          </div>
+        </div>
+      </Carousel.Item>
+    
+
+
+    </Carousel>
     </>
   );
 };

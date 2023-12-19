@@ -37,8 +37,8 @@ export const Mainpage = () => {
 
 
     
-          <div className="row my-5 mx-3 bg-black rounded-3 justify-content-center">
-            {/* <div className="p-2 bg-black rounded-3 justify-content-center "></div> */}
+            <div className="p-2 bg-black rounded-3 mt-5 justify-content-center "></div>
+          <div className="row my-5 mx-3  rounded-3 justify-content-center">
             {/* Card 1 */}
             <div className="col-auto col-md-6 col-lg-4">
               <div className="card upper">
@@ -87,6 +87,7 @@ export const Mainpage = () => {
               </div>
             </div>
           </div>
+            <div className="p-2 bg-black rounded-3 justify-content-center "></div>
       {/* ------------------------------------------------------------------------ */}
  
 
@@ -95,14 +96,18 @@ export const Mainpage = () => {
   <section id="hero" className="d-flex justify-content-center">
     <div className="container" data-aos="fade-up">
 
+
       <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div className="col-12 col-xl-6 col-lg-5">
           <h1 style={{color:'yellowgreen'}}>Quds Publisher<span>'s</span></h1>
-          <h2><div>We excel at guiding researchers towards successful publication in prestigious journals. With our expertise in various indexing systems (Elsvair, Frontiers, Scopus, WOS) and recognition from esteemed bodies (HJRS, UGC, JCR), we ensure your work receives the visibility and recognition it deserves.</div></h2>
+    <div className="p-2 bg-black rounded-3 justify-content-center "></div>
+          <h2 style={{color:'white',fontSize:'24px', alignText:'center'}}> We excel at guiding researchers towards successful publication in prestigious journals. With our expertise in various indexing systems (Elsvair, Frontiers, Scopus, WOS) and recognition from esteemed bodies (HJRS, UGC, JCR), we ensure your work receives the visibility and recognition it deserves.</h2>
         </div>
       </div>
 
-      <div className="row  gy-4 mt-2 justify-content-center " data-aos="zoom-in" data-aos-delay="250">
+
+
+      <div className="row gy-4 mt-2 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
         <div className="col-auto col-xl-2 col-md-4">
           <div className="icon-box">
             <i className="bi bi-facebook"></i>
@@ -154,7 +159,7 @@ export const Mainpage = () => {
    {/* End Hero  */}
 
 {/* Clients carousel Logos */}
-   <div className="container-fluid">
+   <div className="container-fluid mt-5">
         <h1 className="text-center" style={{color:'goldenrod'}}>Our Trusted Client<span>'s</span></h1>
         <br/>
         <Carousel showDots={true} responsive={responsive}>
@@ -162,7 +167,7 @@ export const Mainpage = () => {
         </Carousel>
       </div>
 
-<div className="container-fluid p-2 m-1 ">
+<div className="container-fluid mt-5">
       <Clientsec/>
 </div>
 
