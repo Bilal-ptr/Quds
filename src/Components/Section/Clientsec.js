@@ -46,7 +46,7 @@ const Clientsec = () => {
       {/*  */}
       <Carousel.Item>
         <div className="d-flex flex-column align-items-center justify-content-center h-100">
-          <img
+          <imgl
             className="rounded-circle mt-4"
             src="../../img/testimonials/team-6.jpg"
             alt="Person 1"
