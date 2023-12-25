@@ -175,6 +175,20 @@
   color: white;
 }
 
+
+.test{
+  padding: 40px 0;
+  margin-bottom: 20px;
+  background: url(../../img/testimonials-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border: #ffc451 2px solid;
+  border-radius: 12px;
+  width: 100%;
+}
+
+
 @media (max-width: 767px) {
   .carousel-caption {
     text-align: center;
